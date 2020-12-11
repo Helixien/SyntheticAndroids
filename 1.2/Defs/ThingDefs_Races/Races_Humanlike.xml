@@ -4,7 +4,7 @@
     <ThingDef ParentName="BasePawn">
         <defName>SA_Android</defName>
         <label>android</label>
-        <description>A baseline human, mostly unmodified by gene engineering and mostly unchanged by evolutionary pressures on non-Earth planets.</description>
+        <description>A advanced human-like android, build to look, feel and sound and be nearly indistinguishable form a real human.</description>
         <statBases>
             <MarketValue>2250</MarketValue>
             <MoveSpeed>5.2</MoveSpeed>
