@@ -9,7 +9,7 @@
     </statBases>
     <graphicData>
       <texPath>Things/Filth/Spatter</texPath>
-      <color>(131, 34, 34, 180)</color>
+      <color>(229, 227, 227, 180)</color>
     </graphicData>
     <filth>
       <disappearsInDays>35~40</disappearsInDays>

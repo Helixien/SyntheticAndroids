@@ -128,8 +128,7 @@
                 </points>
             </ageGenerationCurve>
             <hediffGiverSets>
-                <li>OrganicStandard</li>
-                <li>Human</li>
+                <li>SA_Androids</li>
             </hediffGiverSets>
         </race>
         <recipes>
