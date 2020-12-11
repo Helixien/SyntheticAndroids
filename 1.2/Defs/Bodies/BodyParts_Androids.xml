@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <BodyPartDef>
+        <defName>SA_PersonalityMatrix</defName>
+        <label>personality matrix</label>
+        <hitPoints>10</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <delicate>true</delicate>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <skinCovered>false</skinCovered>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_CentralProcessor</defName>
+        <label>central processor</label>
+        <hitPoints>5</hitPoints>
+        <permanentInjuryChanceFactor>9999999</permanentInjuryChanceFactor>
+        <delicate>true</delicate>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <skinCovered>false</skinCovered>
+        <tags>
+            <li>ConsciousnessSource</li>
+        </tags>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_OrganicMatterDecomposer</defName>
+        <label>organic matter decomposer</label>
+        <hitPoints>15</hitPoints>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>MetabolismSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_BreathingSimulator</defName>
+        <label>breathing simulator</label>
+        <hitPoints>10</hitPoints>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>BreathingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PowerCell</defName>
+        <label>power cell</label>
+        <hitPoints>10</hitPoints>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <skinCovered>false</skinCovered>
+        <canSuggestAmputation>false</canSuggestAmputation>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_HydraulicFluidProcessor</defName>
+        <label>hydraulic fluid processor</label>
+        <hitPoints>10</hitPoints>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>BloodFiltrationKidney</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_HydraulicFluidPump</defName>
+        <label>hydraulic fluid pump</label>
+        <hitPoints>10</hitPoints>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>BloodPumpingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_EmergencyPowerCell</defName>
+        <label>emergency power cell</label>
+        <hitPoints>15</hitPoints>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_EyeSensor</defName>
+        <label>eye</label>
+        <hitPoints>12</hitPoints>
+        <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+        <delicate>true</delicate>
+        <skinCovered>false</skinCovered>
+        <socketed>true</socketed>
+        <beautyRelated>true</beautyRelated>
+        <tags>
+            <li>SightSource</li>
+        </tags>
+        <hitChanceFactors>
+            <li>
+                <key>Blunt</key>
+                <value>0</value>
+            </li>
+        </hitChanceFactors>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_EarSensor</defName>
+        <label>ear</label>
+        <hitPoints>12</hitPoints>
+        <frostbiteVulnerability>5</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <beautyRelated>true</beautyRelated>
+        <tags>
+            <li>HearingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_SmellSensor</defName>
+        <label>nose</label>
+        <hitPoints>10</hitPoints>
+        <frostbiteVulnerability>5</frostbiteVulnerability>
+        <skinCovered>true</skinCovered>
+        <beautyRelated>true</beautyRelated>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PlasteelSkull</defName>
+        <label>skull</label>
+        <hitPoints>45</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <canSuggestAmputation>false</canSuggestAmputation>
+        <bleedRate>0</bleedRate>
+        <destroyableByDamage>false</destroyableByDamage>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PlasteelJaw</defName>
+        <label>jaw</label>
+        <hitPoints>30</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <beautyRelated>true</beautyRelated>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>EatingSource</li>
+            <li>TalkingSource</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PlasteelRibcage</defName>
+        <label>ribcage</label>
+        <hitPoints>40</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>BreathingSourceCage</li>
+        </tags>
+        <destroyableByDamage>false</destroyableByDamage>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PlasteelSpine</defName>
+        <label>spine</label>
+        <hitPoints>35</hitPoints>
+        <permanentInjuryChanceFactor>6</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <canSuggestAmputation>false</canSuggestAmputation>
+        <tags>
+            <li>Spine</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PlasteelSternum</defName>
+        <label>sternum</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>BreathingSourceCage</li>
+        </tags>
+        <destroyableByDamage>false</destroyableByDamage>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PlasteelPelvis</defName>
+        <label>pelvis</label>
+        <hitPoints>30</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>Pelvis</li>
+        </tags>
+        <destroyableByDamage>false</destroyableByDamage>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PlasteelClavicle</defName>
+        <label>clavicle</label>
+        <hitPoints>30</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+        <destroyableByDamage>false</destroyableByDamage>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PlasteelHumerus</defName>
+        <label>humerus</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PlasteelRadius</defName>
+        <label>radius</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>ManipulationLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PlasteelFemur</defName>
+        <label>femur</label>
+        <hitPoints>30</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>MovingLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef>
+        <defName>SA_PlasteelTibia</defName>
+        <label>tibia</label>
+        <hitPoints>25</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>MovingLimbSegment</li>
+        </tags>
+    </BodyPartDef>
+
+</Defs>
