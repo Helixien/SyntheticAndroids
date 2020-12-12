@@ -7,7 +7,7 @@
         <description>A advanced synthetic android, build to look, feel and sound and be nearly indistinguishable form a real human.</description>
         <statBases>
             <MarketValue>2250</MarketValue>
-            <MoveSpeed>5.2</MoveSpeed>
+            <MoveSpeed>4.8</MoveSpeed>
             <ComfyTemperatureMin>-22</ComfyTemperatureMin>
             <ComfyTemperatureMax>22</ComfyTemperatureMax>
             <LeatherAmount>50</LeatherAmount>
@@ -77,8 +77,8 @@
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
-            <lifeExpectancy>500</lifeExpectancy>
-            <leatherDef>Leather_Human</leatherDef>
+            <lifeExpectancy>250</lifeExpectancy>
+            <leatherDef>SA_Skin_Android</leatherDef>
             <nameCategory>HumanStandard</nameCategory>
             <body>SA_Android</body>
             <baseBodySize>1</baseBodySize>

@@ -55,7 +55,7 @@
                 </li>
                 <li>
                     <def>SA_PowerCell</def>
-                    <coverage>0.045</coverage>
+                    <coverage>0.062</coverage>
                     <depth>Inside</depth>
                     <groups>
                         <li>Torso</li>
@@ -79,14 +79,6 @@
                 </li>
                 <li>
                     <def>SA_HydraulicFluidPump</def>
-                    <coverage>0.017</coverage>
-                    <depth>Inside</depth>
-                    <groups>
-                        <li>Torso</li>
-                    </groups>
-                </li>
-                <li>
-                    <def>SA_EmergencyPowerCell</def>
                     <coverage>0.017</coverage>
                     <depth>Inside</depth>
                     <groups>

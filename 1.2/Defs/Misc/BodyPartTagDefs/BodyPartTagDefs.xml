@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <BodyPartTagDef>
+        <defName>SA_FluidFiltrationSource</defName>
+        <vital>true</vital>
+    </BodyPartTagDef>
+	
+    <BodyPartTagDef>
+        <defName>SA_EnergySource</defName>
+        <vital>true</vital>
+    </BodyPartTagDef>
+
+    <BodyPartTagDef>
+        <defName>SA_FluidPumpingSource</defName>
+        <vital>true</vital>
+    </BodyPartTagDef>
+
+    <BodyPartTagDef>
+        <defName>BreathingSource</defName>
+        <vital>true</vital>
+    </BodyPartTagDef>
+
+    <BodyPartTagDef>
+        <defName>SA_MemorySource</defName>
+        <vital>true</vital>
+    </BodyPartTagDef>
+	
+	<BodyPartTagDef>
+		<defName>SA_BreathingSource</defName>
+		<vital>false</vital>
+	</BodyPartTagDef>
+
+</Defs>

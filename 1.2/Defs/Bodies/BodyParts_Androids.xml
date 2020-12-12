@@ -11,6 +11,9 @@
         <alive>false</alive>
         <bleedRate>0</bleedRate>
         <skinCovered>false</skinCovered>
+        <tags>
+            <li>SA_MemorySource</li>
+        </tags>
         <canSuggestAmputation>false</canSuggestAmputation>
     </BodyPartDef>
 
@@ -52,7 +55,7 @@
         <alive>false</alive>
         <bleedRate>0</bleedRate>
         <tags>
-            <li>BreathingSource</li>
+            <li>SA_BreathingSource</li>
         </tags>
     </BodyPartDef>
 
@@ -64,6 +67,9 @@
         <alive>false</alive>
         <bleedRate>0</bleedRate>
         <skinCovered>false</skinCovered>
+        <tags>
+            <li>SA_EnergySource</li>
+        </tags>
         <canSuggestAmputation>false</canSuggestAmputation>
     </BodyPartDef>
 
@@ -74,9 +80,9 @@
         <skinCovered>false</skinCovered>
         <solid>true</solid>
         <alive>false</alive>
-        <bleedRate>0</bleedRate>
+        <bleedRate>50</bleedRate>
         <tags>
-            <li>BloodFiltrationKidney</li>
+            <li>SA_FluidFiltrationSource</li>
         </tags>
     </BodyPartDef>
 
@@ -87,20 +93,10 @@
         <skinCovered>false</skinCovered>
         <solid>true</solid>
         <alive>false</alive>
-        <bleedRate>0</bleedRate>
+        <bleedRate>50</bleedRate>
         <tags>
-            <li>BloodPumpingSource</li>
+            <li>SA_FluidPumpingSource</li>
         </tags>
-    </BodyPartDef>
-
-    <BodyPartDef>
-        <defName>SA_EmergencyPowerCell</defName>
-        <label>emergency power cell</label>
-        <hitPoints>15</hitPoints>
-        <skinCovered>false</skinCovered>
-        <solid>true</solid>
-        <alive>false</alive>
-        <bleedRate>0</bleedRate>
     </BodyPartDef>
 
     <BodyPartDef>
