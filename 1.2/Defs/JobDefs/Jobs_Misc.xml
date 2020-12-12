@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <JobDef>
-    <defName>SA_AndroidIngest</defName>
-    <driverClass>SyntheticAndroids.JobDriver_AndroidIngest</driverClass>
-    <reportString>consuming TargetA.</reportString>
-    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
-  </JobDef>
+    <JobDef>
+        <defName>SA_AndroidIngest</defName>
+        <driverClass>SyntheticAndroids.JobDriver_AndroidIngest</driverClass>
+        <reportString>consuming TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
 
 </Defs>
