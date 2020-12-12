@@ -41,9 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Defs\BackstoryDef.cs" />
     <Compile Include="HarmonyPatches\StunHandler_Patches.cs" />
     <Compile Include="HarmonyPatches\Need_Patches.cs" />
+    <Compile Include="Jobs\JobDriver_AndroidLayDown.cs" />
     <Compile Include="Jobs\JobDriver_AndroidIngest.cs" />
+    <Compile Include="Jobs\JobGiver_GetRestAndroid.cs" />
     <Compile Include="Jobs\JobGiver_GetEnergy.cs" />
     <Compile Include="Needs\Need_Energy.cs" />
     <Compile Include="SA_Utils.cs" />

@@ -7,5 +7,12 @@
     <reportString>consuming TargetA.</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
+  
+  <JobDef>
+    <defName>SA_AndroidLayDown</defName>
+    <driverClass>SyntheticAndroids.JobDriver_AndroidLayDown</driverClass>
+    <reportString>lying down.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
 </Defs>

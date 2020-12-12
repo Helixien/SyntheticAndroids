@@ -14,5 +14,6 @@ namespace SyntheticAndroids
         public static NeedDef SA_Energy;
         public static ThingDef SA_Android;
         public static JobDef SA_AndroidIngest;
+        public static JobDef SA_AndroidLayDown;
     }
 }
