@@ -73,7 +73,7 @@
             </li>
         </tools>
         <race>
-            <thinkTreeMain>Humanlike</thinkTreeMain>
+            <thinkTreeMain>SA_Android</thinkTreeMain>
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
@@ -85,6 +85,7 @@
             <baseHealthScale>1.1</baseHealthScale>
 			<bloodDef>SA_Filth_BloodAndroid</bloodDef>
             <foodType>OmnivoreHuman</foodType>
+			<needsRest>False</needsRest>
             <gestationPeriodDays>45</gestationPeriodDays>
             <meatMarketValue>0.8</meatMarketValue>
             <manhunterOnDamageChance>0.20</manhunterOnDamageChance>

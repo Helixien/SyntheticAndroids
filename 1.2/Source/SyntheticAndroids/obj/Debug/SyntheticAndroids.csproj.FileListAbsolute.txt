@@ -1,0 +1,5 @@
+c:\GAMES\Rimworld\Mods\SyntheticAndroids\1.2\Assemblies\SyntheticAndroids.dll
+c:\GAMES\Rimworld\Mods\SyntheticAndroids\1.2\Source\SyntheticAndroids\obj\Debug\SyntheticAndroids.csprojAssemblyReference.cache
+c:\GAMES\Rimworld\Mods\SyntheticAndroids\1.2\Source\SyntheticAndroids\obj\Debug\SyntheticAndroids.csproj.CoreCompileInputs.cache
+c:\GAMES\Rimworld\Mods\SyntheticAndroids\1.2\Source\SyntheticAndroids\obj\Debug\SyntheticAndroids.csproj.CopyComplete
+c:\GAMES\Rimworld\Mods\SyntheticAndroids\1.2\Source\SyntheticAndroids\obj\Debug\SyntheticAndroids.dll

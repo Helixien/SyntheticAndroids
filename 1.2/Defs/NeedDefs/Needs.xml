@@ -3,7 +3,7 @@
 
     <NeedDef>
         <defName>SA_Energy</defName>
-        <needClass>SA_Need_Energy</needClass>
+        <needClass>SyntheticAndroids.Need_Energy</needClass>
         <label>energy</label>
         <description>Rest is how much sleep a creature has gotten recently. If it is at zero, a creature will eventually fall asleep on the spot.</description>
         <listPriority>700</listPriority>
