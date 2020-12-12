@@ -163,6 +163,7 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
+            <postFactor>0.5</postFactor>
           </li>
         </capMods>
       </li>
