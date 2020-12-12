@@ -145,4 +145,44 @@
         </stages>
     </HediffDef>
 
+  <HediffDef>
+    <defName>SA_HydraulicFluidPumpFailure</defName>
+    <label>fluid pump failure</label>
+    <labelNoun>a fluid pump failure</labelNoun>
+    <description>A disruption in the heart's normal beating rhythm. Heart attacks can be debilitatingly painful. They can worsen and lead to death, or recover.</description>
+    <hediffClass>Hediff_HeartAttack</hediffClass>
+    <defaultLabelColor>(1, 0.2, 0.2)</defaultLabelColor>
+    <initialSeverity>0.6</initialSeverity>
+    <lethalSeverity>1</lethalSeverity>
+    <tendable>true</tendable>
+    <stages>
+      <li>
+        <label>painful</label>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.4</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>debilitating</label>
+        <minSeverity>0.6</minSeverity>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.6</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>fatal</label>
+        <minSeverity>1</minSeverity>
+      </li>
+    </stages>
+  </HediffDef>
+
 </Defs>
