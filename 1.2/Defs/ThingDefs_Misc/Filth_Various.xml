@@ -1,22 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<ThingDef ParentName="BaseFilth">
-    <defName>SA_Filth_BloodAndroid</defName>
-    <label>android blood</label>
-    <statBases>
-      <Beauty>-30</Beauty>
-      <Cleanliness>-10</Cleanliness>
-    </statBases>
-    <graphicData>
-      <texPath>Things/Filth/Spatter</texPath>
-      <color>(229, 227, 227, 180)</color>
-    </graphicData>
-    <filth>
-      <disappearsInDays>35~40</disappearsInDays>
-      <rainWashes>true</rainWashes>
-      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
-      <canFilthAttach>true</canFilthAttach>
-      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
-    </filth>
-  </ThingDef>
+
+    <ThingDef ParentName="BaseFilth">
+        <defName>SA_Filth_BloodAndroid</defName>
+        <label>android blood</label>
+        <statBases>
+            <Beauty>-30</Beauty>
+            <Cleanliness>-10</Cleanliness>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Filth/Spatter</texPath>
+            <color>(229, 227, 227, 180)</color>
+        </graphicData>
+        <filth>
+            <disappearsInDays>35~40</disappearsInDays>
+            <rainWashes>true</rainWashes>
+            <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+            <canFilthAttach>true</canFilthAttach>
+            <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+        </filth>
+    </ThingDef>
+
 </Defs>
