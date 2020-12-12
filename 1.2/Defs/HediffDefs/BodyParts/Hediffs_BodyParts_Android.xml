@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Base: Natural body part -->
+  <ThingDef Name="SA_BodyPartAndroidBase" ParentName="BodyPartBase" Abstract="True">
+    <graphicData>
+      <texPath>Things/Item/Health/HealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.80</drawSize>
+      <color>(190,190,190)</color>
+    </graphicData>
+    <thingCategories>
+      <li>SA_BodyPartsAndroid</li>
+    </thingCategories>
+    <statBases>
+      <DeteriorationRate>4.0</DeteriorationRate>
+    </statBases>
+  </ThingDef>
+
+  <!-- Heart -->
+  <ThingDef ParentName="SA_BodyPartAndroidBase">
+    <defName>SA_HydraulicFluidPump</defName>
+    <label>fluid pump</label>
+    <description>An android hydraulic fluid pump. Pumps blood around the body.</description>
+    <descriptionHyperlinks><RecipeDef>SA_InstallSA_HydraulicFluidPump</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>800</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>SA_InstallSA_HydraulicFluidPump</defName>
+    <label>install fluid pump</label>
+    <description>Install a biological heart.</description>
+    <descriptionHyperlinks><ThingDef>Heart</ThingDef></descriptionHyperlinks>
+    <jobString>Installing heart.</jobString>
+    <deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>8</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Heart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Heart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+  </RecipeDef>
+
+</Defs>
