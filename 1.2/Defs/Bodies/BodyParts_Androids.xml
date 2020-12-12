@@ -3,7 +3,7 @@
 
     <BodyPartDef>
         <defName>SA_PersonalityMatrix</defName>
-        <label>personality matrix</label>
+        <label>persona core</label>
         <hitPoints>10</hitPoints>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
         <delicate>true</delicate>

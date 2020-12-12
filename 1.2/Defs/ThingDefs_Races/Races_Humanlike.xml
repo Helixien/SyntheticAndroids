@@ -4,7 +4,7 @@
     <ThingDef ParentName="BasePawn">
         <defName>SA_Android</defName>
         <label>android</label>
-        <description>A advanced human-like android, build to look, feel and sound and be nearly indistinguishable form a real human.</description>
+        <description>A advanced synthetic android, build to look, feel and sound and be nearly indistinguishable form a real human.</description>
         <statBases>
             <MarketValue>2250</MarketValue>
             <MoveSpeed>5.2</MoveSpeed>
@@ -77,7 +77,7 @@
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
-            <lifeExpectancy>1000</lifeExpectancy>
+            <lifeExpectancy>500</lifeExpectancy>
             <leatherDef>Leather_Human</leatherDef>
             <nameCategory>HumanStandard</nameCategory>
             <body>SA_Android</body>
@@ -133,14 +133,8 @@
             </hediffGiverSets>
         </race>
         <recipes>
-            <li>ExciseCarcinoma</li>
             <li>AdministerMechSerumHealer</li>
             <li>RemoveBodyPart</li>
-            <li>Euthanize</li>
-            <li>Anesthetize</li>
-            <li>CureScaria</li>
-            <li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
-            <li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
         </recipes>
     </ThingDef>
 
