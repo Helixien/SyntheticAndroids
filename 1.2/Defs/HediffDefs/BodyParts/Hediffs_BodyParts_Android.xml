@@ -17,33 +17,33 @@
     </statBases>
   </ThingDef>
 
-  <!-- Heart -->
+  <!-- Fluid Pumps -->
   <ThingDef ParentName="SA_BodyPartAndroidBase">
     <defName>SA_HydraulicFluidPump</defName>
     <label>fluid pump</label>
-    <description>An android hydraulic fluid pump. Pumps blood around the body.</description>
-    <descriptionHyperlinks><RecipeDef>SA_InstallSA_HydraulicFluidPump</RecipeDef></descriptionHyperlinks>
+    <description>An android hydraulic fluid pump that simulates a human heartbeat. Pumps blood around the body.</description>
+    <descriptionHyperlinks><RecipeDef>SA_InstallHydraulicFluidPump</RecipeDef></descriptionHyperlinks>
     <statBases>
-      <MarketValue>800</MarketValue>
+      <MarketValue>1000</MarketValue>
       <Mass>1</Mass>
     </statBases>
   </ThingDef>
 
   <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
-    <defName>SA_InstallSA_HydraulicFluidPump</defName>
+    <defName>SA_InstallHydraulicFluidPump</defName>
     <label>install fluid pump</label>
-    <description>Install a biological heart.</description>
-    <descriptionHyperlinks><ThingDef>Heart</ThingDef></descriptionHyperlinks>
+    <description>Install a fluid pump.</description>
+    <descriptionHyperlinks><ThingDef>SA_HydraulicFluidPump</ThingDef></descriptionHyperlinks>
     <jobString>Installing heart.</jobString>
-    <deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
     <skillRequirements>
-      <Medicine>8</Medicine>
+      <Crafting>8</Crafting>
     </skillRequirements>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>Heart</li>
+            <li>SA_HydraulicFluidPump</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -51,11 +51,52 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Heart</li>
+        <li>SA_HydraulicFluidPump</li>
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
-      <li>Heart</li>
+      <li>SA_HydraulicFluidPump</li>
+    </appliedOnFixedBodyParts>
+  </RecipeDef>
+  
+  <ThingDef ParentName="SA_BodyPartAndroidBase">
+    <defName>SA_AdvancedHydraulicFluidPump</defName>
+    <label>advanced fluid pump</label>
+    <description>An advanced android hydraulic fluid pump that simulates a human heartbeat. Pumps blood around the body.</description>
+    <descriptionHyperlinks><RecipeDef>SA_InstallAdvancedHydraulicFluidPump</RecipeDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>1</Mass>
+    </statBases>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>SA_InstallAdvancedHydraulicFluidPump</defName>
+    <label>install advanced fluid pump</label>
+    <description>Install an advanced fluid pump.</description>
+    <descriptionHyperlinks><ThingDef>SA_AdvancedHydraulicFluidPump</ThingDef></descriptionHyperlinks>
+    <jobString>Installing heart.</jobString>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SA_AdvancedHydraulicFluidPump</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SA_AdvancedHydraulicFluidPump</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>SA_HydraulicFluidPump</li>
     </appliedOnFixedBodyParts>
   </RecipeDef>
 
