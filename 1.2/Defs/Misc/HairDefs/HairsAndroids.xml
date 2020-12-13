@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!-- ==================== Android ==================== -->
+
+    <HairDef>
+        <defName>SA_Connor</defName>
+        <label>conner</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Android_Connor</texPath>
+        <hairTags>
+            <li>Urban</li>
+            <li>SA_Android</li>
+        </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>SA_Kovacs</defName>
+        <label>kovacs</label>
+        <hairGender>Male</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Android_Kovacs</texPath>
+        <hairTags>
+            <li>Urban</li>
+            <li>SA_Android</li>
+        </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>SA_Chloe</defName>
+        <label>chloe</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Android_Chloe</texPath>
+        <hairTags>
+            <li>Urban</li>
+            <li>SA_Android</li>
+        </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>SA_Dolores</defName>
+        <label>dolores</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Android_Dolores</texPath>
+        <hairTags>
+            <li>Urban</li>
+            <li>SA_Android</li>
+        </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>SA_Eve</defName>
+        <label>eve</label>
+        <hairGender>Female</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Android_Eve</texPath>
+        <hairTags>
+            <li>Urban</li>
+            <li>SA_Android</li>
+        </hairTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>SA_Sue</defName>
+        <label>sue</label>
+        <hairGender>FemaleUsually</hairGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/Android_Sue</texPath>
+        <hairTags>
+            <li>Urban</li>
+            <li>Punk</li>
+            <li>SA_Android</li>
+        </hairTags>
+    </HairDef>
+
+</Defs>
