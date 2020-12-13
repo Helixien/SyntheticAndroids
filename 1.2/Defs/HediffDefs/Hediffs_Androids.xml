@@ -7,6 +7,7 @@
         <description>A generalized disruption to body functioning caused by excessive exposure to heat and sun. The victim becomes dizzy, weak, and confused. Recovery is quick once in a cool area, but if heat exposure continues, heat stroke gets worse until death.</description>
         <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
         <lethalSeverity>1</lethalSeverity>
+		<hediffClass>SyntheticAndroids.Hediff_Overheating</hediffClass>
         <taleOnVisible>HeatstrokeRevealed</taleOnVisible>
         <stages>
             <li>
@@ -72,7 +73,7 @@
         <label>freezing</label>
         <description>Dangerously low core body temperature. Unless re-warmed, hypothermia gets worse and ends in death. Recovery is quick once the victim is re-warmed. Avoid hypothermia by wearing warm clothes in cold environments.</description>
         <defaultLabelColor>(0.8, 0.8, 1)</defaultLabelColor>
-        <lethalSeverity>1</lethalSeverity>
+		<hediffClass>SyntheticAndroids.Hediff_Freezing</hediffClass>
         <taleOnVisible>HypothermiaRevealed</taleOnVisible>
         <stages>
             <li>

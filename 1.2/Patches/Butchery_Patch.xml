@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/RecipeDef[defName = "ButcherCorpseFlesh"]/fixedIngredientFilter/disallowedCategories</xpath>
+				<value>
+					<li>SA_AndroidCorpses</li>
+				</value>
+			</li>	
+		</operations>	
+	</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThingDef[defName="TableMachining"]/recipes</xpath>
+				<value>
+					<li>SA_DisassembleAndroid</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>
+

@@ -27,41 +27,10 @@ namespace SyntheticAndroids
 					return false;
                 }
 			}
-			return true;
-		}
-	}
-
-	[HarmonyPatch(typeof(MeditationUtility), "CanMeditateNow")]
-	public class Patch_CanMeditateNow
-	{
-		private static bool Prefix(Pawn pawn, ref bool __result)
-		{
-			if (pawn.IsAndroid())
-			{
-				__result = CanMeditateNow(pawn);
-				return false;
-			}
-			return true;
-		}
-
-		public static bool CanMeditateNow(Pawn pawn)
-		{
-			if (pawn.needs.rest != null && (int)pawn.needs.rest.CurCategory >= 2)
+			else if (nd == SADefOf.SA_Energy)
 			{
 				return false;
-			}
-			if (pawn.needs.TryGetNeed<Need_Energy>().EmptyEnergy)
-			{
-				return false;
-			}
-			if (!pawn.Awake())
-			{
-				return false;
-			}
-			if (pawn.health.hediffSet.BleedRateTotal > 0f || (HealthAIUtility.ShouldSeekMedicalRest(pawn) && pawn.timetable?.CurrentAssignment != TimeAssignmentDefOf.Meditate) || HealthAIUtility.ShouldSeekMedicalRestUrgent(pawn))
-			{
-				return false;
-			}
+            } 
 			return true;
 		}
 	}

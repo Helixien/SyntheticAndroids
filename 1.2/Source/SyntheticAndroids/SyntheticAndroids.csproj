@@ -41,14 +41,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comps\CompAndroid.cs" />
     <Compile Include="Defs\BackstoryDef.cs" />
+    <Compile Include="HarmonyPatches\Health_Patches.cs" />
+    <Compile Include="HarmonyPatches\Hediff_Patches.cs" />
+    <Compile Include="HarmonyPatches\Alert_Patches.cs" />
     <Compile Include="HarmonyPatches\StunHandler_Patches.cs" />
     <Compile Include="HarmonyPatches\Need_Patches.cs" />
+    <Compile Include="Hediffs\Hediff_Freezing.cs" />
+    <Compile Include="Hediffs\Hediff_Overheating.cs" />
     <Compile Include="Jobs\JobDriver_AndroidLayDown.cs" />
     <Compile Include="Jobs\JobDriver_AndroidIngest.cs" />
     <Compile Include="Jobs\JobGiver_GetRestAndroid.cs" />
     <Compile Include="Jobs\JobGiver_GetEnergy.cs" />
+    <Compile Include="MentalStates\MentalState_Wander_DazedAndroid.cs" />
     <Compile Include="Needs\Need_Energy.cs" />
+    <Compile Include="AssignAndroidCompToAndroids.cs" />
     <Compile Include="SA_Utils.cs" />
     <Compile Include="SADefOf.cs" />
     <Compile Include="HarmonyPatches\HarmonyInit.cs" />

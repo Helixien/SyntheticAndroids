@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>SA_AndroidCorpses</defName>
+		<label>android corpses</label>
+		<parent>CorpsesHumanlike</parent>
+	</ThingCategoryDef>
+	
+</Defs>

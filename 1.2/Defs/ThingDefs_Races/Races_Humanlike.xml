@@ -79,6 +79,7 @@
             <makesFootprints>true</makesFootprints>
             <lifeExpectancy>250</lifeExpectancy>
             <leatherDef>SA_Skin_Android</leatherDef>
+			<fleshType>SA_AndroidFlesh</fleshType>
             <nameCategory>HumanStandard</nameCategory>
             <body>SA_Android</body>
             <baseBodySize>1</baseBodySize>
