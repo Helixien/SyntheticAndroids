@@ -70,7 +70,7 @@
                     </groups>
                 </li>
                 <li>
-                    <def>SA_HydraulicFluidProcessor</def>
+                    <def>SA_FluidProcessor</def>
                     <coverage>0.025</coverage>
                     <depth>Inside</depth>
                     <groups>
@@ -78,7 +78,7 @@
                     </groups>
                 </li>
                 <li>
-                    <def>SA_HydraulicFluidPump</def>
+                    <def>SA_FluidPump</def>
                     <coverage>0.017</coverage>
                     <depth>Inside</depth>
                     <groups>

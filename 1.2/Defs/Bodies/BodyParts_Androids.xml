@@ -74,8 +74,8 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>SA_HydraulicFluidProcessor</defName>
-        <label>hydraulic fluid processor</label>
+        <defName>SA_FluidProcessor</defName>
+        <label>fluid processor</label>
         <hitPoints>10</hitPoints>
         <skinCovered>false</skinCovered>
         <solid>true</solid>
@@ -87,8 +87,8 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>SA_HydraulicFluidPump</defName>
-        <label>hydraulic fluid pump</label>
+        <defName>SA_FluidPump</defName>
+        <label>fluid pump</label>
         <hitPoints>10</hitPoints>
         <skinCovered>false</skinCovered>
         <solid>true</solid>
