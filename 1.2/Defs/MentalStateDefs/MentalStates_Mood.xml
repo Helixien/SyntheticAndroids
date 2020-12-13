@@ -1,33 +1,32 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <MentalBreakDef>
-    <defName>SA_Wander_DazedAndroid</defName>
-    <mentalState>SA_Wander_DazedAndroid</mentalState>
-    <baseCommonality>1</baseCommonality>
-    <intensity>Major</intensity>
-  </MentalBreakDef>
-  
-  <MentalStateDef Name="WanderDazedAndroid" ParentName="BaseMentalState">
-    <defName>SA_Wander_DazedAndroid</defName>
-    <stateClass>SyntheticAndroids.MentalState_Wander_DazedAndroid</stateClass>
-    <label>dazed</label>
-    <category>Misc</category>
-    <blockNormalThoughts>true</blockNormalThoughts>
-    <nameColor>(0.65, 0.9, 0.93)</nameColor>
-    <minTicksBeforeRecovery>99999999</minTicksBeforeRecovery>
-	<recoverFromSleep>false</recoverFromSleep>
-    <recoverFromDowned>false</recoverFromDowned>
-    <recoverFromCollapsingExhausted>false</recoverFromCollapsingExhausted>
-    <recoveryMtbDays>0.166</recoveryMtbDays>
-    <recoveryMessage>{0} is no longer wandering in a dazed state.</recoveryMessage>
-    <beginLetterLabel>daze</beginLetterLabel>
-    <beginLetter>{0} is wandering around in a dazed state.</beginLetter>
-    <beginLetterDef>NegativeEvent</beginLetterDef>
-    <baseInspectLine>Dazed</baseInspectLine>
-    <tale>MentalStateGaveUp</tale>
-    <unspawnedCanDo>true</unspawnedCanDo>
-  </MentalStateDef>
+    <MentalBreakDef>
+        <defName>SA_Wander_DazedAndroid</defName>
+        <mentalState>SA_Wander_DazedAndroid</mentalState>
+        <baseCommonality>1</baseCommonality>
+        <intensity>Major</intensity>
+    </MentalBreakDef>
 
+    <MentalStateDef Name="WanderDazedAndroid" ParentName="BaseMentalState">
+        <defName>SA_Wander_DazedAndroid</defName>
+        <stateClass>SyntheticAndroids.MentalState_Wander_DazedAndroid</stateClass>
+        <label>dazed</label>
+        <category>Misc</category>
+        <blockNormalThoughts>true</blockNormalThoughts>
+        <nameColor>(0.65, 0.9, 0.93)</nameColor>
+        <minTicksBeforeRecovery>99999999</minTicksBeforeRecovery>
+        <recoverFromSleep>false</recoverFromSleep>
+        <recoverFromDowned>false</recoverFromDowned>
+        <recoverFromCollapsingExhausted>false</recoverFromCollapsingExhausted>
+        <recoveryMtbDays>0.166</recoveryMtbDays>
+        <recoveryMessage>{0} is no longer wandering in a dazed state.</recoveryMessage>
+        <beginLetterLabel>daze</beginLetterLabel>
+        <beginLetter>{0} is wandering around in a dazed state.</beginLetter>
+        <beginLetterDef>NegativeEvent</beginLetterDef>
+        <baseInspectLine>Dazed</baseInspectLine>
+        <tale>MentalStateGaveUp</tale>
+        <unspawnedCanDo>true</unspawnedCanDo>
+    </MentalStateDef>
 
 </Defs>

@@ -1,20 +1,21 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <FleshTypeDef>
-    <defName>SA_AndroidFlesh</defName>
-    <corpseCategory>SA_AndroidCorpses</corpseCategory>
-    <damageEffecter>Damage_HitFlesh</damageEffecter>
-    <wounds>
-      <li>
-        <texture>Things/Pawn/Wounds/WoundFleshA</texture>
-      </li>
-      <li>
-        <texture>Things/Pawn/Wounds/WoundFleshB</texture>
-      </li>
-      <li>
-        <texture>Things/Pawn/Wounds/WoundFleshC</texture>
-      </li>
-    </wounds>
-  </FleshTypeDef>
-  
+
+    <FleshTypeDef>
+        <defName>SA_AndroidFlesh</defName>
+        <corpseCategory>SA_AndroidCorpses</corpseCategory>
+        <damageEffecter>Damage_HitFlesh</damageEffecter>
+        <wounds>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundFleshA</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundFleshB</texture>
+            </li>
+            <li>
+                <texture>Things/Pawn/Wounds/WoundFleshC</texture>
+            </li>
+        </wounds>
+    </FleshTypeDef>
+
 </Defs>
