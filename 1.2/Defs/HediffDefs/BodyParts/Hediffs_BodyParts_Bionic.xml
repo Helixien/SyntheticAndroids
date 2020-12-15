@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef Name="SA_SurgeryInstallBodyPartArtificialBase" ParentName="SurgeryFlesh" Abstract="True">
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <workAmount>2500</workAmount>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <recipeUsers>
+            <li>SA_Android</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+    <RecipeDef Name="SA_SurgeryInstallBodyPartBase" ParentName="SurgeryFlesh" Abstract="True">
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <workAmount>2500</workAmount>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+        <recipeUsers>
+            <li>SA_Android</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+        <defName>SA_InstallBionicEye</defName>
+        <label>install bionic eye</label>
+        <description>Install a bionic eye.</description>
+        <descriptionHyperlinks>
+            <ThingDef>BionicEye</ThingDef>
+            <HediffDef>BionicEye</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing bionic eye.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BionicEye</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BionicEye</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_AndroidEye</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>BionicEye</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+        <defName>SA_InstallBionicArm</defName>
+        <label>install bionic arm</label>
+        <description>Install a bionic arm.</description>
+        <descriptionHyperlinks>
+            <ThingDef>BionicArm</ThingDef>
+            <HediffDef>BionicArm</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing bionic arm.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BionicArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BionicArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Shoulder</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>BionicArm</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+        <defName>SA_InstallBionicLeg</defName>
+        <label>install bionic leg</label>
+        <description>Install a bionic leg.</description>
+        <descriptionHyperlinks>
+            <ThingDef>BionicLeg</ThingDef>
+            <HediffDef>BionicLeg</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing bionic leg.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BionicLeg</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BionicLeg</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Leg</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>BionicLeg</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+        <defName>SA_InstallBionicSpine</defName>
+        <label>install bionic spine</label>
+        <description>Install a bionic spine.</description>
+        <descriptionHyperlinks>
+            <ThingDef>BionicSpine</ThingDef>
+            <HediffDef>BionicSpine</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing bionic spine.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BionicSpine</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BionicSpine</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_PlasteelSpine</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>BionicSpine</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+        <defName>SA_InstallDeathAcidifier</defName>
+        <label>install death acidifier</label>
+        <description>Install a death acidifier.</description>
+        <descriptionHyperlinks>
+            <ThingDef>DeathAcidifier</ThingDef>
+            <HediffDef>DeathAcidifier</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing death acidifier.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>DeathAcidifier</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>DeathAcidifier</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>DeathAcidifier</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+        <defName>SA_InstallBionicEar</defName>
+        <label>install bionic ear</label>
+        <description>Install a bionic ear.</description>
+        <descriptionHyperlinks>
+            <ThingDef>BionicEar</ThingDef>
+            <HediffDef>BionicEar</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing bionic ear.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>BionicEar</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>BionicEar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_AndroidEar</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>BionicEar</addsHediff>
+    </RecipeDef>
+
+</Defs>
