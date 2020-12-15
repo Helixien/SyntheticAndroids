@@ -17,6 +17,8 @@
         </statBases>
     </ThingDef>
 	
+	<!--=============== Personality Matrix	====================-->
+	
     <ThingDef ParentName="SA_BodyPartAndroidBase">
         <defName>SA_PersonalityMatrix</defName>
         <label>personality matrix</label>
@@ -62,6 +64,8 @@
         </appliedOnFixedBodyParts>
     </RecipeDef>
 	
+	<!--=============== Central Processor	====================-->
+	
     <ThingDef ParentName="SA_BodyPartAndroidBase">
         <defName>SA_CentralProcessor</defName>
         <label>central processor</label>
@@ -106,6 +110,8 @@
             <li>SA_CentralProcessor</li>
         </appliedOnFixedBodyParts>
     </RecipeDef>
+
+	<!--=============== Fluid Pump	====================-->
 	
     <ThingDef ParentName="SA_BodyPartAndroidBase">
         <defName>SA_FluidPump</defName>
