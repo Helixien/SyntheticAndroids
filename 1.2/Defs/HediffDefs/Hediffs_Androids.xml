@@ -2,9 +2,9 @@
 <Defs>
 
     <HediffDef>
-        <defName>SA_Overheating</defName>
-        <label>overheating</label>
-        <description>A generalized disruption to body functioning caused by excessive exposure to heat and sun. The victim becomes dizzy, weak, and confused. Recovery is quick once in a cool area, but if heat exposure continues, heat stroke gets worse until death.</description>
+        <defName>SA_TemperatureHot</defName>
+        <label>high temperature</label>
+        <description>ph</description>
         <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
         <lethalSeverity>1</lethalSeverity>
 		<hediffClass>SyntheticAndroids.Hediff_Overheating</hediffClass>
@@ -40,8 +40,7 @@
             </li>
             <li>
                 <label>serious</label>
-                <minSeverity>0.35</minSeverity>
-                <painOffset>0.15</painOffset>
+                <minSeverity>0.50</minSeverity>
                 <capMods>
                     <li>
                         <capacity>Moving</capacity>
@@ -54,10 +53,9 @@
                 </capMods>
             </li>
             <li>
-                <label>extreme</label>
-                <minSeverity>0.62</minSeverity>
+                <label>overheating</label>
+                <minSeverity>0.80</minSeverity>
                 <lifeThreatening>true</lifeThreatening>
-                <painOffset>0.30</painOffset>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
@@ -69,9 +67,9 @@
     </HediffDef>
 
     <HediffDef>
-        <defName>SA_Freezing</defName>
-        <label>freezing</label>
-        <description>Dangerously low core body temperature. Unless re-warmed, hypothermia gets worse and ends in death. Recovery is quick once the victim is re-warmed. Avoid hypothermia by wearing warm clothes in cold environments.</description>
+        <defName>SA_TemperatureCold</defName>
+        <label>low temperature</label>
+        <description>ph</description>
         <defaultLabelColor>(0.8, 0.8, 1)</defaultLabelColor>
 		<hediffClass>SyntheticAndroids.Hediff_Freezing</hediffClass>
         <taleOnVisible>HypothermiaRevealed</taleOnVisible>
@@ -114,8 +112,7 @@
             </li>
             <li>
                 <label>serious</label>
-                <minSeverity>0.35</minSeverity>
-                <painOffset>0.15</painOffset>
+                <minSeverity>0.5</minSeverity>
                 <capMods>
                     <li>
                         <capacity>Moving</capacity>
@@ -132,57 +129,15 @@
                 </capMods>
             </li>
             <li>
-                <label>extreme</label>
-                <minSeverity>0.62</minSeverity>
+                <label>freezing</label>
+                <minSeverity>0.80<minSeverity>
                 <lifeThreatening>true</lifeThreatening>
-                <painOffset>0.30</painOffset>
                 <capMods>
                     <li>
                         <capacity>Consciousness</capacity>
                         <setMax>0.1</setMax>
                     </li>
                 </capMods>
-            </li>
-        </stages>
-    </HediffDef>
-
-    <HediffDef>
-        <defName>SA_HydraulicFluidPumpFailure</defName>
-        <label>fluid pump failure</label>
-        <labelNoun>a fluid pump failure</labelNoun>
-        <description>A disruption in the heart's normal beating rhythm. Heart attacks can be debilitatingly painful. They can worsen and lead to death, or recover.</description>
-        <hediffClass>Hediff_HeartAttack</hediffClass>
-        <defaultLabelColor>(1, 0.2, 0.2)</defaultLabelColor>
-        <initialSeverity>0.6</initialSeverity>
-        <lethalSeverity>1</lethalSeverity>
-        <tendable>true</tendable>
-        <stages>
-            <li>
-                <label>painful</label>
-                <lifeThreatening>true</lifeThreatening>
-                <painOffset>0.4</painOffset>
-                <capMods>
-                    <li>
-                        <capacity>Consciousness</capacity>
-                        <postFactor>0.5</postFactor>
-                    </li>
-                </capMods>
-            </li>
-            <li>
-                <label>debilitating</label>
-                <minSeverity>0.6</minSeverity>
-                <lifeThreatening>true</lifeThreatening>
-                <painOffset>0.6</painOffset>
-                <capMods>
-                    <li>
-                        <capacity>Consciousness</capacity>
-                        <setMax>0.1</setMax>
-                    </li>
-                </capMods>
-            </li>
-            <li>
-                <label>fatal</label>
-                <minSeverity>1</minSeverity>
             </li>
         </stages>
     </HediffDef>
