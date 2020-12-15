@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!--=============== Android Organs / Internal Hardware	====================-->
+
     <BodyPartDef>
         <defName>SA_PersonalityMatrix</defName>
         <label>personality matrix</label>
@@ -21,7 +23,7 @@
         <defName>SA_CentralProcessor</defName>
         <label>central processor</label>
         <hitPoints>5</hitPoints>
-        <permanentInjuryChanceFactor>9999999</permanentInjuryChanceFactor>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
         <delicate>true</delicate>
         <solid>true</solid>
         <alive>false</alive>
@@ -42,8 +44,9 @@
         <alive>false</alive>
         <bleedRate>0</bleedRate>
         <tags>
-            <li>MetabolismSource</li>
+            <li>SA_MatterProcessing</li>
         </tags>
+        <canSuggestAmputation>true</canSuggestAmputation>
     </BodyPartDef>
 
     <BodyPartDef>
@@ -57,6 +60,7 @@
         <tags>
             <li>SA_BreathingSource</li>
         </tags>
+        <canSuggestAmputation>true</canSuggestAmputation>
     </BodyPartDef>
 	
     <BodyPartDef>
@@ -98,6 +102,7 @@
         <tags>
             <li>SA_FluidFiltrationSource</li>
         </tags>
+        <canSuggestAmputation>true</canSuggestAmputation>
     </BodyPartDef>
 
     <BodyPartDef>
@@ -111,13 +116,28 @@
         <tags>
             <li>SA_FluidPumpingSource</li>
         </tags>
+        <canSuggestAmputation>true</canSuggestAmputation>
+    </BodyPartDef>
+	
+    <BodyPartDef>
+        <defName>SA_FluidHeater</defName>
+        <label>fluid heater</label>
+        <hitPoints>10</hitPoints>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>50</bleedRate>
+        <tags>
+            <li>SA_CoolingSource</li>
+        </tags>
+        <canSuggestAmputation>true</canSuggestAmputation>
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>SA_EyeSensor</defName>
-        <label>eye</label>
+        <defName>SA_Artificialeye</defName>
+        <label>artificial eye</label>
         <hitPoints>12</hitPoints>
-        <permanentInjuryChanceFactor>15</permanentInjuryChanceFactor>
+        <permanentInjuryChanceFactor>10</permanentInjuryChanceFactor>
         <delicate>true</delicate>
         <skinCovered>false</skinCovered>
         <socketed>true</socketed>
@@ -131,31 +151,36 @@
                 <value>0</value>
             </li>
         </hitChanceFactors>
+        <canSuggestAmputation>true</canSuggestAmputation>
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>SA_EarSensor</defName>
-        <label>ear</label>
+        <defName>SA_ArtificialEar</defName>
+        <label>artificial ear</label>
         <hitPoints>12</hitPoints>
-        <frostbiteVulnerability>5</frostbiteVulnerability>
+        <frostbiteVulnerability>o</frostbiteVulnerability>
         <skinCovered>true</skinCovered>
         <beautyRelated>true</beautyRelated>
         <tags>
             <li>HearingSource</li>
         </tags>
+        <canSuggestAmputation>true</canSuggestAmputation>
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>SA_SmellSensor</defName>
-        <label>nose</label>
+        <defName>SA_ArtificialNose</defName>
+        <label>artificial nose</label>
         <hitPoints>10</hitPoints>
-        <frostbiteVulnerability>5</frostbiteVulnerability>
+        <frostbiteVulnerability>o</frostbiteVulnerability>
         <skinCovered>true</skinCovered>
         <beautyRelated>true</beautyRelated>
         <solid>true</solid>
         <bleedRate>0</bleedRate>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <canSuggestAmputation>true</canSuggestAmputation>
     </BodyPartDef>
+	
+	<!--=============== Android Plasteel Bones	====================-->
 
     <BodyPartDef>
         <defName>SA_PlasteelSkull</defName>

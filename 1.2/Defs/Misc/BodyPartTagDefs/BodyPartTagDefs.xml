@@ -5,7 +5,12 @@
         <defName>SA_FluidFiltrationSource</defName>
         <vital>true</vital>
     </BodyPartTagDef>
-	
+
+    <BodyPartTagDef>
+        <defName>SA_MatterProcessing</defName>
+        <vital>false</vital>
+    </BodyPartTagDef>
+
     <BodyPartTagDef>
         <defName>SA_EnergySource</defName>
         <vital>true</vital>
@@ -13,11 +18,6 @@
 
     <BodyPartTagDef>
         <defName>SA_FluidPumpingSource</defName>
-        <vital>true</vital>
-    </BodyPartTagDef>
-
-    <BodyPartTagDef>
-        <defName>BreathingSource</defName>
         <vital>true</vital>
     </BodyPartTagDef>
 
@@ -33,7 +33,7 @@
 	
 	<BodyPartTagDef>
 		<defName>SA_CoolingSource</defName>
-		<vital>false</vital>
+		<vital>true</vital>
 	</BodyPartTagDef>
 
 </Defs>
