@@ -27,9 +27,11 @@
 				<li>SA_AndroidCorpses</li>
 			</categories>
 		</fixedIngredientFilter>
-		<specialProducts>
-			<li>Butchery</li>
-		</specialProducts>
+		<products>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>75</Plasteel>
+			<SA_Skin_Android>25</SA_Skin_Android>
+		</products>
 	</RecipeDef>	  
 
 </Defs>
