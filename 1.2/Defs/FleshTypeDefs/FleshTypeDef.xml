@@ -7,13 +7,13 @@
         <damageEffecter>Damage_HitFlesh</damageEffecter>
         <wounds>
             <li>
-                <texture>Things/Pawn/Wounds/WoundFleshA</texture>
+                <texture>Things/Pawn/Wounds/Android_WoundFleshA</texture>
             </li>
             <li>
-                <texture>Things/Pawn/Wounds/WoundFleshB</texture>
+                <texture>Things/Pawn/Wounds/Android_WoundFleshB</texture>
             </li>
             <li>
-                <texture>Things/Pawn/Wounds/WoundFleshC</texture>
+                <texture>Things/Pawn/Wounds/Android_WoundFleshC</texture>
             </li>
         </wounds>
     </FleshTypeDef>
