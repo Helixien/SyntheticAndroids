@@ -63,7 +63,25 @@
                 </li>
                 <li>
                     <def>SA_BreathingSimulator</def>
-                    <coverage>0.025</coverage>
+                    <coverage>0.005</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>SA_HeatSink</def>
+					<customLabel>left heat sink</customLabel>
+                    <coverage>0.010</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>SA_HeatSink</def>
+					<customLabel>right heat sink</customLabel>
+                    <coverage>0.010</coverage>
                     <depth>Inside</depth>
                     <groups>
                         <li>Torso</li>

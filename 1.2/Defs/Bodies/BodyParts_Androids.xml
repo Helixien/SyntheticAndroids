@@ -3,7 +3,7 @@
 
     <BodyPartDef>
         <defName>SA_PersonalityMatrix</defName>
-        <label>persona core</label>
+        <label>personality matrix</label>
         <hitPoints>10</hitPoints>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
         <delicate>true</delicate>
@@ -34,8 +34,8 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>SA_OrganicMatterDecomposer</defName>
-        <label>organic matter decomposer</label>
+        <defName>SA_OrganicMatterProcessor</defName>
+        <label>organic matter processor</label>
         <hitPoints>15</hitPoints>
         <skinCovered>false</skinCovered>
         <solid>true</solid>
@@ -57,6 +57,20 @@
         <tags>
             <li>SA_BreathingSource</li>
         </tags>
+    </BodyPartDef>
+	
+    <BodyPartDef>
+        <defName>SA_HeatSink</defName>
+        <label>internal heat sink</label>
+        <hitPoints>5</hitPoints>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>SA_CoolingSource</li>
+        </tags>
+		<canSuggestAmputation>true</canSuggestAmputation>
     </BodyPartDef>
 
     <BodyPartDef>

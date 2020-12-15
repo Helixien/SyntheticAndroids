@@ -16,25 +16,97 @@
             <DeteriorationRate>4.0</DeteriorationRate>
         </statBases>
     </ThingDef>
-
-    <!-- Base: Upgrade body part -->
-    <ThingDef Name="SA_BodyPartAndroidUpgrade" ParentName="BodyPartBase" Abstract="True">
-        <techLevel>Ultra</techLevel>
-        <graphicData>
-            <texPath>Things/Item/Health/HealthItem</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.80</drawSize>
-            <color>(190,190,190)</color>
-        </graphicData>
-        <thingCategories>
-            <li>SA_BodyPartsAndroid</li>
-        </thingCategories>
+	
+    <ThingDef ParentName="SA_BodyPartAndroidBase">
+        <defName>SA_PersonalityMatrix</defName>
+        <label>personality matrix</label>
+        <description>ph</description>
+        <descriptionHyperlinks>
+            <RecipeDef>SA_InstallPersonalityMatrix</RecipeDef>
+        </descriptionHyperlinks>
         <statBases>
-            <DeteriorationRate>4.0</DeteriorationRate>
+            <MarketValue>1000</MarketValue>
+            <Mass>1</Mass>
         </statBases>
     </ThingDef>
-
-    <!-- Fluid Pumps -->
+	
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>SA_InstallPersonalityMatrix</defName>
+        <label>install personality matrix</label>
+        <description>Install a personality matrix.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SA_PersonalityMatrix</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing personality matrix.</jobString>
+        <deathOnFailedSurgeryChance>1</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Crafting>14</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SA_PersonalityMatrix</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SA_PersonalityMatrix</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_PersonalityMatrix</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+	
+    <ThingDef ParentName="SA_BodyPartAndroidBase">
+        <defName>SA_CentralProcessor</defName>
+        <label>central processor</label>
+        <description>ph</description>
+        <descriptionHyperlinks>
+            <RecipeDef>SA_InstallCentralProcessor</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+	
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>SA_InstallCentralProcessor</defName>
+        <label>install central processor</label>
+        <description>Install a central processor.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SA_CentralProcessor</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing central processor.</jobString>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SA_CentralProcessor</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SA_CentralProcessor</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_CentralProcessor</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+	
     <ThingDef ParentName="SA_BodyPartAndroidBase">
         <defName>SA_FluidPump</defName>
         <label>fluid pump</label>

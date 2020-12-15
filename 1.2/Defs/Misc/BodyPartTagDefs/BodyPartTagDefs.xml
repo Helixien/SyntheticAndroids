@@ -30,5 +30,10 @@
 		<defName>SA_BreathingSource</defName>
 		<vital>false</vital>
 	</BodyPartTagDef>
+	
+	<BodyPartTagDef>
+		<defName>SA_CoolingSource</defName>
+		<vital>false</vital>
+	</BodyPartTagDef>
 
 </Defs>
