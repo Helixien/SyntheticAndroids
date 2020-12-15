@@ -17,6 +17,28 @@
         </statBases>
     </ThingDef>
 	
+	  <RecipeDef Name="SA_SurgeryInstallImplantBase" ParentName="SurgeryFlesh" Abstract="True">
+		<workerClass>Recipe_InstallImplant</workerClass>
+		<workAmount>2500</workAmount>
+		<skillRequirements>
+		  <Crafting>5</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+		  <li>SA_Android</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter><categories><li>Medicine</li></categories></filter>
+			<count>2</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <categories>
+			<li>Medicine</li>
+		  </categories>
+		</fixedIngredientFilter>
+	  </RecipeDef>
+	
 	<!--=============== Personality Matrix	====================-->
 	
     <ThingDef ParentName="SA_BodyPartAndroidBase">
@@ -32,7 +54,7 @@
         </statBases>
     </ThingDef>
 	
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallPersonalityMatrix</defName>
         <label>install personality matrix</label>
         <description>Install a personality matrix.</description>
@@ -79,7 +101,7 @@
         </statBases>
     </ThingDef>
 	
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallCentralProcessor</defName>
         <label>install central processor</label>
         <description>Install a central processor.</description>
@@ -126,7 +148,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallFluidPump</defName>
         <label>install fluid pump</label>
         <description>Install a fluid pump.</description>
@@ -173,7 +195,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallOrganicMatterProcessor</defName>
         <label>install organic processor</label>
         <description>Install a organic processor.</description>
@@ -220,7 +242,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallBreathingSimulator</defName>
         <label>install breathing simulator</label>
         <description>Install a breathing simulator.</description>
@@ -267,7 +289,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallHeatSink</defName>
         <label>install heat sink</label>
         <description>Install a heat sink.</description>
@@ -314,7 +336,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallPowerCell</defName>
         <label>install power cell</label>
         <description>Install a power cell.</description>
@@ -361,7 +383,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallFluidProcessor</defName>
         <label>install fluid processor</label>
         <description>Install a fluid processor.</description>
@@ -408,7 +430,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallFluidHeater</defName>
         <label>install fluid heater</label>
         <description>Install a fluid heater.</description>
@@ -455,7 +477,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallAndroidEye</defName>
         <label>install android eye</label>
         <description>Install an android eye.</description>
@@ -502,7 +524,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallSA_AndroidEar</defName>
         <label>install artificial ear</label>
         <description>Install an artificial ear.</description>
@@ -549,7 +571,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
         <defName>SA_InstallAndroidNose</defName>
         <label>install artificial nose</label>
         <description>Install an artificial nose.</description>
