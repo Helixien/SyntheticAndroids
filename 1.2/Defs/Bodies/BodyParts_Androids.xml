@@ -37,7 +37,7 @@
 
     <BodyPartDef>
         <defName>SA_OrganicMatterProcessor</defName>
-        <label>organic matter processor</label>
+        <label>organic processor</label>
         <hitPoints>15</hitPoints>
         <skinCovered>false</skinCovered>
         <solid>true</solid>
@@ -134,7 +134,7 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>SA_Artificialeye</defName>
+        <defName>SA_AndroidEye</defName>
         <label>artificial eye</label>
         <hitPoints>12</hitPoints>
         <permanentInjuryChanceFactor>10</permanentInjuryChanceFactor>
@@ -155,7 +155,7 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>SA_ArtificialEar</defName>
+        <defName>SA_AndroidEar</defName>
         <label>artificial ear</label>
         <hitPoints>12</hitPoints>
         <frostbiteVulnerability>o</frostbiteVulnerability>
@@ -168,7 +168,7 @@
     </BodyPartDef>
 
     <BodyPartDef>
-        <defName>SA_ArtificialNose</defName>
+        <defName>SA_AndroidNose</defName>
         <label>artificial nose</label>
         <hitPoints>10</hitPoints>
         <frostbiteVulnerability>o</frostbiteVulnerability>

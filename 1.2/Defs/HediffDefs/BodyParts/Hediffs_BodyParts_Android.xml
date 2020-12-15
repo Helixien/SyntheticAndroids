@@ -111,7 +111,7 @@
         </appliedOnFixedBodyParts>
     </RecipeDef>
 
-	<!--=============== Fluid Pump	====================-->
+	<!--=============== Fluid Pump ====================-->
 	
     <ThingDef ParentName="SA_BodyPartAndroidBase">
         <defName>SA_FluidPump</defName>
@@ -155,6 +155,429 @@
         </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
             <li>SA_FluidPump</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+	
+	<!--=============== Organic Matter Processor ====================-->
+	
+    <ThingDef ParentName="SA_BodyPartAndroidBase">
+        <defName>SA_OrganicMatterProcessor</defName>
+        <label>organic processor</label>
+        <description>ph</description>
+        <descriptionHyperlinks>
+            <RecipeDef>SA_InstallOrganicMatterProcessor</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>SA_InstallOrganicMatterProcessor</defName>
+        <label>install organic processor</label>
+        <description>Install a organic processor.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SA_OrganicMatterProcessor</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing organic processor.</jobString>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SA_OrganicMatterProcessor</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SA_OrganicMatterProcessor</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_OrganicMatterProcessor</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+	
+	<!--=============== Breathing Simulator ====================-->
+	
+    <ThingDef ParentName="SA_BodyPartAndroidBase">
+        <defName>SA_BreathingSimulator</defName>
+        <label>breathing simulator</label>
+        <description>ph</description>
+        <descriptionHyperlinks>
+            <RecipeDef>SA_InstallBreathingSimulator</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>SA_InstallBreathingSimulator</defName>
+        <label>install breathing simulator</label>
+        <description>Install a breathing simulator.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SA_BreathingSimulator</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing breathing simulator.</jobString>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SA_BreathingSimulator</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SA_BreathingSimulator</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_BreathingSimulator</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+	
+	<!--=============== Heat Sink ====================-->
+	
+    <ThingDef ParentName="SA_BodyPartAndroidBase">
+        <defName>SA_HeatSink</defName>
+        <label>heat sink</label>
+        <description>ph</description>
+        <descriptionHyperlinks>
+            <RecipeDef>SA_InstallHeatSink</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>SA_InstallHeatSink</defName>
+        <label>install heat sink</label>
+        <description>Install a heat sink.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SA_HeatSink</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing heat sink.</jobString>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SA_HeatSink</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SA_HeatSink</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_HeatSink</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+	
+	<!--=============== Power Cell ====================-->
+	
+    <ThingDef ParentName="SA_BodyPartAndroidBase">
+        <defName>SA_PowerCell</defName>
+        <label>heat sink</label>
+        <description>ph</description>
+        <descriptionHyperlinks>
+            <RecipeDef>SA_InstallPowerCell</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>SA_InstallPowerCell</defName>
+        <label>install power cell</label>
+        <description>Install a power cell.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SA_PowerCell</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing power cell.</jobString>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SA_PowerCell</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SA_PowerCell</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_PowerCell</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+	
+	<!--=============== Fluid Processor ====================-->
+	
+    <ThingDef ParentName="SA_BodyPartAndroidBase">
+        <defName>SA_FluidProcessor</defName>
+        <label>fluid processor</label>
+        <description>ph</description>
+        <descriptionHyperlinks>
+            <RecipeDef>SA_InstallFluidProcessor</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>SA_InstallFluidProcessor</defName>
+        <label>install fluid processor</label>
+        <description>Install a fluid processor.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SA_FluidProcessor</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing fluid processor.</jobString>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SA_FluidProcessor</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SA_FluidProcessor</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_FluidProcessor</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+	
+	<!--=============== Fluid Heater ====================-->
+	
+    <ThingDef ParentName="SA_BodyPartAndroidBase">
+        <defName>SA_FluidHeater</defName>
+        <label>fluid heater</label>
+        <description>ph</description>
+        <descriptionHyperlinks>
+            <RecipeDef>SA_InstallFluidHeater</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>SA_InstallFluidHeater</defName>
+        <label>install fluid heater</label>
+        <description>Install a fluid heater.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SA_FluidHeater</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing fluid heater.</jobString>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SA_FluidHeater</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SA_FluidHeater</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_FluidHeater</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+	
+	<!--=============== Artificial Eye ====================-->
+	
+    <ThingDef ParentName="SA_BodyPartAndroidBase">
+        <defName>SA_AndroidEye</defName>
+        <label>artificial eye</label>
+        <description>ph</description>
+        <descriptionHyperlinks>
+            <RecipeDef>SA_InstallAndroidEye</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>SA_InstallAndroidEye</defName>
+        <label>install android eye</label>
+        <description>Install an android eye.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SA_AndroidEye</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing android eye.</jobString>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SA_AndroidEye</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SA_AndroidEye</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_AndroidEye</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+
+	<!--=============== Artificial Ear ====================-->
+	
+    <ThingDef ParentName="SA_BodyPartAndroidBase">
+        <defName>SA_AndroidEar</defName>
+        <label>artificial eye</label>
+        <description>ph</description>
+        <descriptionHyperlinks>
+            <RecipeDef>SA_InstallSA_AndroidEar</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>SA_InstallSA_AndroidEar</defName>
+        <label>install artificial ear</label>
+        <description>Install an artificial ear.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SA_AndroidEar</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing artificial ear.</jobString>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SA_AndroidEar</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SA_AndroidEar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_AndroidEar</li>
+        </appliedOnFixedBodyParts>
+    </RecipeDef>
+	
+	<!--=============== Artificial Nose ====================-->
+	
+    <ThingDef ParentName="SA_BodyPartAndroidBase">
+        <defName>SA_AndroidNose</defName>
+        <label>artificial nose</label>
+        <description>ph</description>
+        <descriptionHyperlinks>
+            <RecipeDef>SA_InstallAndroidNose</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MarketValue>1000</MarketValue>
+            <Mass>1</Mass>
+        </statBases>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+        <defName>SA_InstallAndroidNose</defName>
+        <label>install artificial nose</label>
+        <description>Install an artificial nose.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SA_AndroidNose</ThingDef>
+        </descriptionHyperlinks>
+        <jobString>Installing artificial nose.</jobString>
+        <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SA_AndroidNose</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SA_AndroidNose</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_AndroidNose</li>
         </appliedOnFixedBodyParts>
     </RecipeDef>
 
