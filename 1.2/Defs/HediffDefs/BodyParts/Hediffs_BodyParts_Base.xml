@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef Name="SA_SurgeryInstallBodyPartBase" ParentName="SurgeryFlesh" Abstract="True">
+        <workerClass>Recipe_InstallImplant</workerClass>
+        <workAmount>2500</workAmount>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+        <recipeUsers>
+            <li>SA_Android</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>2</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+    <RecipeDef Name="SA_SurgeryInstallImplantBase" ParentName="SA_SurgeryInstallBodyPartBase" Abstract="True">
+        <workAmount>3000</workAmount>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef Name="SA_SurgeryInstallBodyPartArtificialBase" ParentName="SA_SurgeryInstallBodyPartBase" Abstract="True">
+        <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    </RecipeDef>
+
+    <RecipeDef Name="SA_SurgeryInstallWoodenPartBase" ParentName="SA_SurgeryInstallBodyPartArtificialBase" Abstract="True">
+        <workAmount>1500</workAmount>
+        <skillRequirements>
+            <Crafting>3</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WoodLog</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+    <RecipeDef Name="SA_SurgeryInstallBodyPartProstheticBase" ParentName="SA_SurgeryInstallBodyPartArtificialBase" Abstract="True">
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef Name="SA_SurgeryRemoveImplantBase" ParentName="SurgeryFlesh" Abstract="True">
+        <workerClass>Recipe_RemoveImplant</workerClass>
+        <workAmount>2500</workAmount>
+        <isViolation>true</isViolation>
+        <skillRequirements>
+            <Crafting>5</Crafting>
+        </skillRequirements>
+        <recipeUsers>
+            <li>SA_Android</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+</Defs>

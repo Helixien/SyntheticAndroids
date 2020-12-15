@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartProstheticBase">
+        <defName>SA_InstallSimpleProstheticLeg</defName>
+        <label>install prosthetic leg</label>
+        <description>Install a prosthetic leg.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SimpleProstheticLeg</ThingDef>
+            <HediffDef>SimpleProstheticLeg</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing prosthetic leg.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SimpleProstheticLeg</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SimpleProstheticLeg</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Leg</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>SimpleProstheticLeg</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartProstheticBase">
+        <defName>SA_InstallSimpleProstheticArm</defName>
+        <label>install prosthetic arm</label>
+        <description>Install a prosthetic arm.</description>
+        <descriptionHyperlinks>
+            <ThingDef>SimpleProstheticArm</ThingDef>
+            <HediffDef>SimpleProstheticArm</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing prosthetic arm.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SimpleProstheticArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>SimpleProstheticArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Shoulder</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>SimpleProstheticArm</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartProstheticBase">
+        <defName>SA_InstallPowerClaw</defName>
+        <label>install power claw</label>
+        <description>Install a power claw.</description>
+        <descriptionHyperlinks>
+            <ThingDef>PowerClaw</ThingDef>
+            <HediffDef>PowerClaw</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing power claw.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>PowerClaw</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>PowerClaw</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Hand</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PowerClaw</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SA_SurgeryInstallImplantBase">
+        <defName>SA_InstallJoywire</defName>
+        <label>install joywire</label>
+        <description>Install a joywire.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Joywire</ThingDef>
+            <HediffDef>Joywire</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing joywire.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Joywire</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Joywire</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Head</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Joywire</addsHediff>
+    </RecipeDef>
+
+</Defs>

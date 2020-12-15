@@ -133,7 +133,6 @@
             </hediffGiverSets>
         </race>
         <recipes>
-            <li>AdministerMechSerumHealer</li>
             <li>RemoveBodyPart</li>
         </recipes>
     </ThingDef>

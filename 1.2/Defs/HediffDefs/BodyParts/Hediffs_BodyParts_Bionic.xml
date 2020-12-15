@@ -1,58 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <RecipeDef Name="SA_SurgeryInstallBodyPartArtificialBase" ParentName="SurgeryFlesh" Abstract="True">
-        <workerClass>Recipe_InstallImplant</workerClass>
-        <workAmount>2500</workAmount>
-        <skillRequirements>
-            <Crafting>8</Crafting>
-        </skillRequirements>
-        <recipeUsers>
-            <li>SA_Android</li>
-        </recipeUsers>
-        <ingredients>
-            <li>
-                <filter>
-                    <categories>
-                        <li>Medicine</li>
-                    </categories>
-                </filter>
-                <count>2</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <categories>
-                <li>Medicine</li>
-            </categories>
-        </fixedIngredientFilter>
-    </RecipeDef>
-
-    <RecipeDef Name="SA_SurgeryInstallBodyPartBase" ParentName="SurgeryFlesh" Abstract="True">
-        <workerClass>Recipe_InstallImplant</workerClass>
-        <workAmount>2500</workAmount>
-        <skillRequirements>
-            <Crafting>5</Crafting>
-        </skillRequirements>
-        <recipeUsers>
-            <li>SA_Android</li>
-        </recipeUsers>
-        <ingredients>
-            <li>
-                <filter>
-                    <categories>
-                        <li>Medicine</li>
-                    </categories>
-                </filter>
-                <count>2</count>
-            </li>
-        </ingredients>
-        <fixedIngredientFilter>
-            <categories>
-                <li>Medicine</li>
-            </categories>
-        </fixedIngredientFilter>
-    </RecipeDef>
-
     <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
         <defName>SA_InstallBionicEye</defName>
         <label>install bionic eye</label>

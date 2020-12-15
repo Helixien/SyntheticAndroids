@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef ParentName="SA_SurgeryInstallWoodenPartBase">
+        <defName>InstallPegLeg</defName>
+        <label>install peg leg</label>
+        <description>Install a peg leg.</description>
+        <descriptionHyperlinks>
+            <ThingDef>WoodLog</ThingDef>
+            <HediffDef>PegLeg</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing peg leg.</jobString>
+        <appliedOnFixedBodyParts>
+            <li>Leg</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>PegLeg</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SA_SurgeryInstallWoodenPartBase">
+        <defName>InstallWoodenHand</defName>
+        <label>install wooden hand</label>
+        <description>Install a wooden hand.</description>
+        <descriptionHyperlinks>
+            <ThingDef>WoodLog</ThingDef>
+            <HediffDef>WoodenHand</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing wooden hand.</jobString>
+        <appliedOnFixedBodyParts>
+            <li>Hand</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WoodenHand</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SA_SurgeryInstallWoodenPartBase">
+        <defName>InstallWoodenFoot</defName>
+        <label>install wooden foot</label>
+        <description>Install a wooden foot.</description>
+        <descriptionHyperlinks>
+            <ThingDef>WoodLog</ThingDef>
+            <HediffDef>WoodenFoot</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing wooden foot.</jobString>
+        <workAmount>1000</workAmount>
+        <appliedOnFixedBodyParts>
+            <li>Foot</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>WoodenFoot</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>InstallDenture</defName>
+        <label>install denture</label>
+        <description>Install a denture.</description>
+        <jobString>Installing denture.</jobString>
+        <workAmount>1500</workAmount>
+        <descriptionHyperlinks>
+            <HediffDef>Denture</HediffDef>
+        </descriptionHyperlinks>
+        <skillRequirements>
+            <Medicine>3</Medicine>
+        </skillRequirements>
+        <appliedOnFixedBodyParts>
+            <li>Jaw</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>Denture</addsHediff>
+    </RecipeDef>
+
+</Defs>
