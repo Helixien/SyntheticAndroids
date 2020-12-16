@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <TraitDef>
+        <defName>SA_Sentient</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>sentient</label>
+                <description>{PAWN_nameDef} has gained sentience</description>
+            </li>
+        </degreeDatas>
+        <conflictingTraits>
+            <li>SlowLearner</li>
+        </conflictingTraits>
+    </TraitDef>
+
+</Defs>
