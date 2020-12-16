@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef ParentName="TribalBase">
+        <defName>SA_Tribal_Whiteblood</defName>
+        <label>whiteblood</label>
+        <race>SA_Android</race>
+        <combatPower>120</combatPower>
+        <canBeSapper>true</canBeSapper>
+        <apparelMoney>200~550</apparelMoney>
+        <apparelRequired>
+            <li>Apparel_WarMask</li>
+        </apparelRequired>
+        <weaponMoney>300~300</weaponMoney>
+        <weaponTags>
+            <li>NeolithicMeleeAdvanced</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="TribalBase">
+        <defName>SA_Tribal_WhitebloodArcher</defName>
+        <label>whiteblood archer</label>
+        <race>SA_Android</race>
+        <combatPower>120</combatPower>
+        <apparelMoney>200~550</apparelMoney>
+        <apparelRequired>
+            <li>Apparel_WarMask</li>
+        </apparelRequired>
+        <weaponMoney>250~250</weaponMoney>
+        <weaponTags>
+            <li>NeolithicRangedHeavy</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+</Defs>

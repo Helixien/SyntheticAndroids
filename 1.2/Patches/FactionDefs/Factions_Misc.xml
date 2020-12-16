@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[kindDef = "Combat"]/options</xpath>
+                <value>
+                    <SA_Grenadier_Destructive>4.5</SA_Grenadier_Destructive>
+                    <SA_Mercenary_Slasher>14</SA_Mercenary_Slasher>
+                    <SA_Mercenary_Gunner>20</SA_Mercenary_Gunner>
+                    <SA_Mercenary_Elite>20</SA_Mercenary_Elite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[kindDef = "Trader"]/guards</xpath>
+                <value>
+                    <SA_Grenadier_Destructive>4.5</SA_Grenadier_Destructive>
+                    <SA_Mercenary_Slasher>14</SA_Mercenary_Slasher>
+                    <SA_Mercenary_Gunner>20</SA_Mercenary_Gunner>
+                    <SA_Mercenary_Elite>20</SA_Mercenary_Elite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li[kindDef = "Settlement"]/options</xpath>
+                <value>
+                    <SA_Grenadier_Destructive>4.5</SA_Grenadier_Destructive>
+                    <SA_Mercenary_Slasher>14</SA_Mercenary_Slasher>
+                    <SA_Mercenary_Gunner>20</SA_Mercenary_Gunner>
+                    <SA_Mercenary_Elite>20</SA_Mercenary_Elite>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[commonality = "100"]/options</xpath>
+                <value>
+					<SA_Tribal_Whiteblood>20</SA_Tribal_Whiteblood>
+					<SA_Tribal_WhitebloodArcher>15</SA_Tribal_WhitebloodArcher>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[commonality = "60"]/options</xpath>
+                <value>
+					<SA_Tribal_WhitebloodArcher>20</SA_Tribal_WhitebloodArcher>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[kindDef = "Peaceful"]/options</xpath>
+                <value>
+					<SA_Tribal_Whiteblood>20</SA_Tribal_Whiteblood>
+					<SA_Tribal_WhitebloodArcher>15</SA_Tribal_WhitebloodArcher>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[kindDef = "Trader"]/guards</xpath>
+                <value>
+					<SA_Tribal_Whiteblood>20</SA_Tribal_Whiteblood>
+					<SA_Tribal_WhitebloodArcher>14</SA_Tribal_WhitebloodArcher>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name = "TribeBase"]/pawnGroupMakers/li[kindDef = "Settlement"]/options</xpath>
+                <value>
+					<SA_Tribal_Whiteblood>20</SA_Tribal_Whiteblood>
+					<SA_Tribal_WhitebloodArcher>14</SA_Tribal_WhitebloodArcher>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[commonality = "100"]/options</xpath>
+                <value>
+					<SA_Grenadier_Destructiv>6</SA_Grenadier_Destructiv>
+					<SA_Mercenary_Gunner>20</SA_Mercenary_Gunner>
+					<SA_Mercenary_Heavy>12</SA_Mercenary_Heavy>
+					<SA_Mercenary_Slasher>6</SA_Mercenary_Slasher>
+					<SA_Mercenary_Sniper>14</SA_Mercenary_Sniper>
+					<SA_Mercenary_Elite>20</SA_Mercenary_Elite>
+					<SA_PirateBoss>5</SA_PirateBoss>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[commonality = "30"]/options</xpath>
+                <value>
+					<SA_Mercenary_Slasher>20</SA_Mercenary_Slasher>
+					<SA_PirateBoss>5</SA_PirateBoss>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[commonality = "20"]/options</xpath>
+                <value>
+					<SA_Grenadier_Destructiv>6</SA_Grenadier_Destructiv>
+					<SA_Mercenary_Gunner>20</SA_Mercenary_Gunner>
+					<SA_Mercenary_Heavy>12</SA_Mercenary_Heavy>
+					<SA_Mercenary_Slasher>6</SA_Mercenary_Slasher>
+					<SA_Mercenary_Sniper>14</SA_Mercenary_Sniper>
+					<SA_Mercenary_Elite>20</SA_Mercenary_Elite>
+					<SA_PirateBoss>5</SA_PirateBoss>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[commonality = "20"]/options</xpath>
+                <value>
+					<SA_Grenadier_Destructiv>20</SA_Grenadier_Destructiv>
+					<SA_Mercenary_Gunner>2</SA_Mercenary_Gunner>
+					<SA_Mercenary_Heavy>12</SA_Mercenary_Heavy>
+					<SA_Mercenary_Elite>2</SA_Mercenary_Elite>
+					<SA_PirateBoss>1</SA_PirateBoss>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[commonality = "10"]/options</xpath>
+                <value>
+					<SA_Mercenary_Sniper>10</SA_Mercenary_Sniper>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef = "Settlement"]/options</xpath>
+                <value>
+					<SA_Grenadier_Destructiv>6</SA_Grenadier_Destructiv>
+					<SA_Mercenary_Gunner>20</SA_Mercenary_Gunner>
+					<SA_Mercenary_Slasher>6</SA_Mercenary_Slasher>
+					<SA_Mercenary_Sniper>20</SA_Mercenary_Sniper>
+					<SA_Mercenary_Elite>20</SA_Mercenary_Elite>
+					<SA_PirateBoss>10</SA_PirateBoss>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>
