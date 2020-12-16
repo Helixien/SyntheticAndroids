@@ -9,43 +9,12 @@
                 <hediff>BloodLoss</hediff>
             </li>
             <li Class="HediffGiver_Hypothermia">
-                <hediff>SA_Freezing</hediff>
+                <hediff>SA_TemperatureCold</hediff>
             </li>
             <li Class="HediffGiver_Heat">
-                <hediff>SA_Overheating</hediff>
+                <hediff>SA_TemperatureHot</hediff>
             </li>
             <!-- Special -->
-            <li Class="HediffGiver_RandomAgeCurved">
-                <hediff>SA_HydraulicFluidPumpFailure</hediff>
-                <partsToAffect>
-                    <li>SA_HydraulicFluidPump</li>
-                </partsToAffect>
-                <allowOnLodgers>false</allowOnLodgers>
-                <allowOnQuestRewardPawns>false</allowOnQuestRewardPawns>
-                <minPlayerPopulation>2</minPlayerPopulation>
-                <ageFractionMtbDaysCurve>
-                    <points>
-                        <li>(0.6, 9999999)</li>
-                        <li>(0.8, 2500)</li>
-                        <li>(1, 300)</li>
-                    </points>
-                </ageFractionMtbDaysCurve>
-            </li>
-        </hediffGivers>
-    </HediffGiverSetDef>
-
-    <HediffGiverSetDef>
-        <defName>Human</defName>
-        <hediffGivers>
-            <li Class="HediffGiver_BrainInjury">
-                <hediff>TraumaSavant</hediff>
-                <partsToAffect>
-                    <li>Brain</li>
-                </partsToAffect>
-                <chancePerDamagePct>0.12</chancePerDamagePct>
-                <letterLabel>Trauma savant</letterLabel>
-                <letter>[PAWN_nameDef]'s brain injury has caused [PAWN_objective] to develop strange savant-like abilities.</letter>
-            </li>
         </hediffGivers>
     </HediffGiverSetDef>
 
