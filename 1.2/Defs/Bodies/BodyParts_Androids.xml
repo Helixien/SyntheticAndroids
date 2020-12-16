@@ -40,7 +40,7 @@
         <label>organic processor</label>
         <hitPoints>15</hitPoints>
         <skinCovered>false</skinCovered>
-        <solid>true</solid>
+        <solid>false</solid>
         <alive>false</alive>
         <bleedRate>0</bleedRate>
         <tags>
@@ -96,7 +96,7 @@
         <label>fluid processor</label>
         <hitPoints>10</hitPoints>
         <skinCovered>false</skinCovered>
-        <solid>true</solid>
+        <solid>false</solid>
         <alive>false</alive>
         <bleedRate>50</bleedRate>
         <tags>
@@ -110,7 +110,7 @@
         <label>fluid pump</label>
         <hitPoints>10</hitPoints>
         <skinCovered>false</skinCovered>
-        <solid>true</solid>
+        <solid>false</solid>
         <alive>false</alive>
         <bleedRate>50</bleedRate>
         <tags>
@@ -124,7 +124,7 @@
         <label>fluid heater</label>
         <hitPoints>10</hitPoints>
         <skinCovered>false</skinCovered>
-        <solid>true</solid>
+        <solid>false</solid>
         <alive>false</alive>
         <bleedRate>50</bleedRate>
         <tags>
@@ -158,7 +158,7 @@
         <defName>SA_AndroidEar</defName>
         <label>artificial ear</label>
         <hitPoints>12</hitPoints>
-        <frostbiteVulnerability>o</frostbiteVulnerability>
+        <frostbiteVulnerability>0</frostbiteVulnerability>
         <skinCovered>true</skinCovered>
         <beautyRelated>true</beautyRelated>
         <tags>
@@ -171,7 +171,7 @@
         <defName>SA_AndroidNose</defName>
         <label>artificial nose</label>
         <hitPoints>10</hitPoints>
-        <frostbiteVulnerability>o</frostbiteVulnerability>
+        <frostbiteVulnerability>0</frostbiteVulnerability>
         <skinCovered>true</skinCovered>
         <beautyRelated>true</beautyRelated>
         <solid>true</solid>

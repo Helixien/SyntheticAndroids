@@ -1,10 +1,16 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingCategoryDef>
-		<defName>SA_AndroidCorpses</defName>
-		<label>android corpses</label>
-		<parent>CorpsesHumanlike</parent>
-	</ThingCategoryDef>
-	
+    <ThingCategoryDef>
+        <defName>SA_AndroidCorpses</defName>
+        <label>android corpses</label>
+        <parent>CorpsesHumanlike</parent>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+        <defName>SA_BodyPartsAndroid</defName>
+        <label>android</label>
+        <parent>BodyParts</parent>
+    </ThingCategoryDef>
+
 </Defs>

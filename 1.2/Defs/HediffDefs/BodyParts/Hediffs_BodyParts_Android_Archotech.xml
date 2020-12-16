@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <RecipeDef ParentName="SA_SA_SurgeryInstallBodyPartArtificialBase">
+  <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
     <defName>SA_InstallArchotechEye</defName>
     <label>install archotech eye</label>
     <description>Install an archotech eye.</description>

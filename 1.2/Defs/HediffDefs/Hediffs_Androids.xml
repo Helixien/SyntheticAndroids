@@ -130,7 +130,7 @@
             </li>
             <li>
                 <label>freezing</label>
-                <minSeverity>0.80<minSeverity>
+                <minSeverity>0.80</minSeverity>
                 <lifeThreatening>true</lifeThreatening>
                 <capMods>
                     <li>
