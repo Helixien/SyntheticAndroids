@@ -21,8 +21,17 @@ namespace SyntheticAndroids
         public static BodyPartDef SA_BreathingSimulator;
 
         public static BodyPartDef SA_PowerCell;
-        public static BodyPartDef SA_HydraulicFluidPump;
-        public static BodyPartDef SA_HydraulicFluidProcessor;
+        public static BodyPartDef SA_FluidPump;
+        public static BodyPartDef SA_FluidProcessor;
+
+        public static BodyPartTagDef SA_FluidFiltrationSource;
+        public static BodyPartTagDef SA_MatterProcessing;
+        public static BodyPartTagDef SA_EnergySource;
+        public static BodyPartTagDef SA_FluidPumpingSource;
+        public static BodyPartTagDef SA_MemorySource;
+        public static BodyPartTagDef SA_BreathingSource;
+        public static BodyPartTagDef SA_CoolingSource;
+
 
         public static MentalStateDef SA_Wander_DazedAndroid;
 
