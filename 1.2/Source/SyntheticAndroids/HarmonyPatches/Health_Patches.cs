@@ -128,9 +128,7 @@ namespace SyntheticAndroids
 
 		public static IEnumerable<PawnCapacityDef> GetAndroidCapacities()
         {
-			var list = new List<PawnCapacityDef>();
 			return DefDatabase<PawnCapacityDef>.AllDefs.Where((PawnCapacityDef x) => x.showOnHumanlikes);
-
 		}
 		private static float DrawLeftRow(Rect leftRect, float curY, string leftLabel, string rightLabel, Color rightLabelColor, TipSignal tipSignal)
 		{
@@ -165,7 +163,7 @@ namespace SyntheticAndroids
 		{
 			FieldInfo bleedingIconField = AccessTools.Field(typeof(HealthCardUtility), "BleedingIcon");
 			MethodInfo iconHelper = AccessTools.Method(typeof(HealthCardUtility_DrawHediffRow), "TransformIconColorBlueIfFemale", null, null);
-			androidBleedingIcon = ContentFinder<Texture2D>.Get("UI/Icons/Medical/Leaking", true);
+			androidBleedingIcon = ContentFinder<Texture2D>.Get("UI/Icons/Medical/BleedingAndroid", true);
 			foreach (CodeInstruction code in instructions)
 			{
 				yield return code;

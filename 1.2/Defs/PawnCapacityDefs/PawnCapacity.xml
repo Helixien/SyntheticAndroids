@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <PawnCapacityDef>
+    <defName>SA_Cooling</defName>
+    <label>cooling</label>
+    <listOrder>10</listOrder>
+    <workerClass>SyntheticAndroids.PawnCapacityWorker_Cooling</workerClass>
+    <lethalFlesh>true</lethalFlesh>
+    <showOnCaravanHealthTab>true</showOnCaravanHealthTab>
+  </PawnCapacityDef>
+
+  <PawnCapacityDef>
+    <defName>SA_OrganicProcessing</defName>
+    <label>organic processing</label>
+    <listOrder>20</listOrder>
+    <workerClass>SyntheticAndroids.PawnCapacityWorker_OrganicProcessing</workerClass>
+    <minForCapable>0.15</minForCapable>
+    <zeroIfCannotBeAwake>true</zeroIfCannotBeAwake>
+    <showOnCaravanHealthTab>true</showOnCaravanHealthTab>
+  </PawnCapacityDef>
+
+  <PawnCapacityDef>
+    <defName>SA_Recharging</defName>
+    <label>recharging</label>
+    <listOrder>30</listOrder>
+    <workerClass>SyntheticAndroids.PawnCapacityWorker_Recharging</workerClass>
+    <zeroIfCannotBeAwake>true</zeroIfCannotBeAwake>
+    <showOnCaravanHealthTab>true</showOnCaravanHealthTab>
+  </PawnCapacityDef>
+
+</Defs>
