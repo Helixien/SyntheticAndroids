@@ -135,6 +135,27 @@
         <recipes>
             <li>RemoveBodyPart</li>
         </recipes>
+		
+				<modExtensions>
+			<li Class="SyntheticAndroids.PawnSpawnOptions">
+				<disallowedTraits>
+					<li>Abrasive</li>
+					<li>AnnoyingVoice</li>
+					<li>Ascetic</li>
+					<li>Asexual</li>
+					<li>Beauty</li>
+					<li>Bisexual</li>
+					<li>Bloodlust</li>
+					<li>BodyPurist</li>
+					<li>Brawler</li>
+					<li>TorturedArtist</li>
+					<li>Tough</li>
+					<li>Transhumanist</li>
+					<li>Undergrounder</li>
+					<li>Wimp</li>
+				</disallowedTraits>
+			</li>
+		</modExtensions>
     </ThingDef>
 
 </Defs>

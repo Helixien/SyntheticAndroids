@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AlienRace">
+      <HintPath>..\..\..\..\Humanoid Alien Races 2.0\1.2\Assemblies\AlienRace.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +48,7 @@
     <Compile Include="Comps\CompAndroid.cs" />
     <Compile Include="Defs\BackstoryDef.cs" />
     <Compile Include="HarmonyPatches\Health_Patches.cs" />
+    <Compile Include="HarmonyPatches\PawnGenerator_Patches.cs" />
     <Compile Include="HarmonyPatches\Hediff_Patches.cs" />
     <Compile Include="HarmonyPatches\Alert_Patches.cs" />
     <Compile Include="HarmonyPatches\StunHandler_Patches.cs" />
@@ -55,6 +60,7 @@
     <Compile Include="Jobs\JobGiver_GetRestAndroid.cs" />
     <Compile Include="Jobs\JobGiver_GetEnergy.cs" />
     <Compile Include="MentalStates\MentalState_Wander_DazedAndroid.cs" />
+    <Compile Include="ModExtensions\PawnSpawnOptions.cs" />
     <Compile Include="Needs\Need_Energy.cs" />
     <Compile Include="AssignAndroidCompToAndroids.cs" />
     <Compile Include="SA_Utils.cs" />
