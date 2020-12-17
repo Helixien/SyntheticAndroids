@@ -60,7 +60,7 @@ namespace SyntheticAndroids
 		}
 		public void TryMakeEnabled()
 		{
-			if (Android.health.hediffSet.GetNotMissingParts().Select(x => x.def).Contains(SADefOf.SA_PowerCell))
+			if (Android.health.hediffSet.GetNotMissingParts().Select(x => x.def).Contains(SADefOf.SA_PowerCell) && !(this.parent.Map?.gameConditionManager.ElectricityDisabled ?? false))
             {
 				disabled = false;
             }
@@ -83,6 +83,24 @@ namespace SyntheticAndroids
 			this.manhuntingState = false;
 		}
 
+        public override void CompTick()
+        {
+            base.CompTick();
+			if (Find.TickManager.TicksGame % 60 == 0)
+            {
+				if (!this.disabled)
+				{
+					if (this.parent.Map != null && this.parent.Map.gameConditionManager.ElectricityDisabled)
+					{
+						this.MakeDisabled();
+					}
+				}
+				else
+				{
+					this.TryMakeEnabled();
+				}
+			}
+        }
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
             base.PostSpawnSetup(respawningAfterLoad);

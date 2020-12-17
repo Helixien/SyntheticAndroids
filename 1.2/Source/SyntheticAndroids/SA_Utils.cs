@@ -19,7 +19,15 @@ namespace SyntheticAndroids
             {
                 return comp;
             }
-            return null;
+            else
+            {
+                var androidComp = pawn.TryGetComp<CompAndroid>();
+                if (androidComp != null)
+                {
+                    cachedAndroidComps[pawn] = androidComp;
+                }
+                return androidComp;
+            }
         }
         public static bool IsAndroid(this Pawn pawn)
         {
