@@ -16,4 +16,10 @@
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
 
+    <JobDef>
+        <defName>SA_ConsumeNeutroamine</defName>
+        <driverClass>SyntheticAndroids.JobDriver_ConsumeNeutroamine</driverClass>
+        <reportString>consuming TargetA.</reportString>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
 </Defs>

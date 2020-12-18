@@ -80,6 +80,7 @@
 						</li>
 					</subNodes>
 				</li>
+				<li Class="SyntheticAndroids.JobGiver_FillAndroidBloodUrgent"></li>
 				<!-- Self-tend if you're an NPC -->
 				<li Class="ThinkNode_ConditionalNPCCanSelfTendNow">
 					<subNodes>

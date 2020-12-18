@@ -13,8 +13,10 @@ namespace SyntheticAndroids
     {
         public static NeedDef SA_Energy;
         public static ThingDef SA_Android;
+        public static ThingDef Neutroamine;
         public static JobDef SA_AndroidIngest;
         public static JobDef SA_AndroidLayDown;
+        public static JobDef SA_ConsumeNeutroamine;
 
         public static BodyPartDef SA_PersonalityMatrix;
         public static BodyPartDef SA_CentralProcessor;

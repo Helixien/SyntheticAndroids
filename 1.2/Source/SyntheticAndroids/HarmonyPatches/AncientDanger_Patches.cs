@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using RimWorld;
+using RimWorld.BaseGen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,59 +12,57 @@ using Verse;
 
 namespace SyntheticAndroids
 {
-	[HarmonyPatch(typeof(PawnGenerator), "GenerateTraits")]
-	public static class GenerateTraits_Patch
+	[HarmonyPatch(typeof(SymbolResolver_RandomMechanoidGroup), "Resolve")]
+	public static class Resolve_Patch
 	{
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{
-			List<CodeInstruction> list = instructions.ToList<CodeInstruction>();
-			MethodInfo defListInfo = AccessTools.Property(typeof(DefDatabase<TraitDef>), "AllDefsListForReading").GetGetMethod();
-			MethodInfo validatorInfo = AccessTools.Method(typeof(GenerateTraits_Patch), "GenerateTraitsValidator", null, null);
-			foreach (CodeInstruction instruction in list)
+			List<CodeInstruction> instructionList = instructions.ToList<CodeInstruction>();
+			MethodInfo getAllDefsListForReadingInfo = AccessTools.Property(typeof(DefDatabase<ResearchProjectDef>), "AllDefsListForReading").GetGetMethod();
+			MethodInfo getAllPawnKindsInfo = AccessTools.Method(typeof(Resolve_Patch), "GetAllPawnKinds", null, null);
+			for (int i = 0; i < instructionList.Count; i++)
 			{
-				if (instruction.opcode == OpCodes.Call && CodeInstructionExtensions.OperandIs(instruction, defListInfo))
+				CodeInstruction instruction = instructionList[i];
+				if (instruction.opcode == OpCodes.Call && CodeInstructionExtensions.OperandIs(instruction, getAllDefsListForReadingInfo))
 				{
-					yield return new CodeInstruction(OpCodes.Ldarg_0, null);
-					instruction.operand = validatorInfo;
+					yield return instruction;
+					instruction = new CodeInstruction(OpCodes.Call, getAllPawnKindsInfo);
 				}
 				yield return instruction;
 			}
 			yield break;
 		}
 
-		public static IEnumerable<TraitDef> GenerateTraitsValidator(Pawn p)
+		private static List<PawnKindDef> GetAllPawnKinds()
 		{
-			if (p.def.HasModExtension<PawnSpawnOptions>())
-            {
-				var options = p.def.GetModExtension<PawnSpawnOptions>();
-				return from tr in DefDatabase<TraitDef>.AllDefs where !options.disallowedTraits.Contains(tr) select tr;
-			}
-			else
-            {
-				return DefDatabase<TraitDef>.AllDefsListForReading;
-			}
+			return DefDatabase<PawnKindDef>.AllDefsListForReading.Where((PawnKindDef kind) => kind.RaceProps.IsMechanoid).ToList();
 		}
 	}
 
-	[StaticConstructorOnStartup]
-	public static class GenerateAlienTraits_Patch
+	public class SymbolResolver_RandomMechanoidGroup_Patch
 	{
-		static GenerateAlienTraits_Patch()
-        {
-			if (ModLister.HasActiveModWithName("Humanoid Alien Races 2.0"))
-            {
-				HarmonyInit.harmonyInstance.Patch(AccessTools.Method(typeof(AlienRace.HarmonyPatches), "GenerateTraitsValidator", null, null), null, new HarmonyMethod(typeof(GenerateAlienTraits_Patch),
-					"GenerateTraitsValidator", null), null, null);
-			}
-		}
-		public static void GenerateTraitsValidator(ref IEnumerable<TraitDef> __result, Pawn p)
+		[HarmonyPatch(typeof(SymbolResolver_RandomMechanoidGroup), "Resolve")]
+		public class Resolve
 		{
-			var list = __result.ToList();
-			if (p.def.HasModExtension<PawnSpawnOptions>())
+			internal static void Postfix()
 			{
-				var options = p.def.GetModExtension<PawnSpawnOptions>();
-				list = list.Where(x => !options.disallowedTraits.Contains(x)).ToList();
-				__result = list;
+				CheckStackItemRecursive();
+			}
+
+			private static void CheckStackItemRecursive()
+			{
+				if (BaseGen.symbolStack.Empty)
+				{
+					return;
+				}
+				SymbolStack.Element element = BaseGen.symbolStack.Pop();
+				if (element.symbol == "pawn" && element.resolveParams.faction == Faction.OfMechanoids)
+				{
+					element.resolveParams.singlePawnKindDef = DefDatabase<PawnKindDef>.AllDefsListForReading.Where((PawnKindDef kind) 
+							=> kind.RaceProps.IsMechanoid).RandomElementByWeight((PawnKindDef kind) => 1f / kind.combatPower);
+					CheckStackItemRecursive();
+				}
+				BaseGen.symbolStack.Push(element.symbol, element.resolveParams, element.symbolPath);
 			}
 		}
 	}
