@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--=============== Android Organs / Internal Hardware	====================-->
@@ -204,7 +204,7 @@
         <beautyRelated>true</beautyRelated>
         <bleedRate>0</bleedRate>
         <tags>
-            <li>EatingSource</li>
+            <li>SA_MatterProcessing</li>
             <li>TalkingSource</li>
         </tags>
     </BodyPartDef>
