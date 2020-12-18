@@ -35,33 +35,6 @@ namespace SyntheticAndroids
         }
 	}
 
-	//[HarmonyPatch(typeof(SymbolResolver_RandomMechanoidGroup), "Resolve")]
-	//public static class Resolve_Patch
-	//{
-	//
-	//	public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
-	//	{
-	//		List<CodeInstruction> list = instructions.ToList<CodeInstruction>();
-	//		MethodInfo defListInfo = AccessTools.Property(typeof(DefDatabase<PawnKindDef>), "AllDefsListForReading").GetGetMethod();
-	//		MethodInfo validatorInfo = AccessTools.Method(typeof(Resolve_Patch), "GenerateTraitsValidator", null, null);
-	//		foreach (CodeInstruction instruction in list)
-	//		{
-	//			if (instruction.opcode == OpCodes.Call && CodeInstructionExtensions.OperandIs(instruction, defListInfo))
-	//			{
-	//				yield return new CodeInstruction(OpCodes.Ldarg_0, null);
-	//				instruction.operand = validatorInfo;
-	//			}
-	//			yield return instruction;
-	//		}
-	//		yield break;
-	//	}
-	//
-	//	public static IEnumerable<PawnKindDef> GenerateTraitsValidator()
-	//	{
-	//		return DefDatabase<PawnKindDef>.AllDefsListForReading.Where((PawnKindDef kind) => kind.RaceProps.IsMechanoid || kind == SADefOf.SA_AncientAndroid);
-	//	}
-	//}
-
 	[HarmonyPatch(typeof(ThingSetMaker_RefugeePod), "Generate")]
 	public static class Generate_Patch
 	{
