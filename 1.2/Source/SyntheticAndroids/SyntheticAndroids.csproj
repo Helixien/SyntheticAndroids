@@ -50,7 +50,7 @@
     <Compile Include="Comps\CompAndroid.cs" />
     <Compile Include="Defs\BackstoryDef.cs" />
     <Compile Include="HarmonyPatches\Health_Patches.cs" />
-    <Compile Include="HarmonyPatches\AncientDanger_Patches.cs" />
+    <Compile Include="HarmonyPatches\Events_Patches.cs" />
     <Compile Include="HarmonyPatches\PawnGenerator_Patches.cs" />
     <Compile Include="HarmonyPatches\Hediff_Patches.cs" />
     <Compile Include="HarmonyPatches\Alert_Patches.cs" />

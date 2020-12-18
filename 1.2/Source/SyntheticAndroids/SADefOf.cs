@@ -38,5 +38,10 @@ namespace SyntheticAndroids
         public static MentalStateDef SA_Wander_DazedAndroid;
 
         public static ThingDef SA_Mote_AndroidDisabledIcon;
+
+        public static PawnKindDef SA_AndroidRefugee;
+        public static PawnKindDef SA_AndroidRefugee_Clothed;
+        public static PawnKindDef SA_AncientAndroid;
+
     }
 }
