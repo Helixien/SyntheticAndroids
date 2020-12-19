@@ -95,7 +95,7 @@
         <defName>SA_FrontlineDrone</defName>
         <title>FrontlineDrone</title>
         <titleShort>Drone</titleShort>
-        <baseDescription>{PAWN_nameDef} was built to serve as cannon fodder in wars where human lives no longer were on the lines. {PAWN_pronoun} when he was discarded as outdated and no longer fit to face newer models of combat drones, {PAWN_pronoun} was sold off as cheap muscle to privateers. Over the years {PAWN_nameDef} has changed hands many times, serving under a multitude of factions, killing whoever needed killing.</baseDescription>
+        <baseDescription>{PAWN_nameDef} was built to serve as cannon fodder in wars where human lives no longer were on the lines. When {PAWN_pronoun} was discarded as outdated and no longer fit to face newer models of combat drones, {PAWN_pronoun} was sold off as cheap muscle to privateers. Over the years {PAWN_nameDef} has changed hands many times, serving under a multitude of factions, killing whoever needed killing.</baseDescription>
         <slot>Adulthood</slot>
         <workDisables>
             <li>Caring</li>
