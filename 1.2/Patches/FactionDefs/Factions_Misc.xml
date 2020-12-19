@@ -30,6 +30,10 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
 				<value>
+					<SA_WorkerDrone>3</SA_WorkerDrone>
+					<SA_SocialDrone>1.5</SA_SocialDrone>
+					<SA_AssistantDrone>1.5</SA_AssistantDrone>
+					<SA_MedicDrone>0.5</SA_MedicDrone>
 					<SA_CombatDroneHeavy>0.5</SA_CombatDroneHeavy>
 					<SA_CombatDroneSlasher>2.5</SA_CombatDroneSlasher>
 					<SA_CombatDroneGunner>3.5</SA_CombatDroneGunner>
@@ -88,6 +92,10 @@
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
 				<value>
+					<SA_WorkerDrone>3</SA_WorkerDrone>
+					<SA_SocialDrone>1.5</SA_SocialDrone>
+					<SA_AssistantDrone>1.5</SA_AssistantDrone>
+					<SA_MedicDrone>0.5</SA_MedicDrone>
 					<SA_CombatDroneHeavy>0.5</SA_CombatDroneHeavy>
 					<SA_CombatDroneSlasher>3.5</SA_CombatDroneSlasher>
 					<SA_CombatDroneGunner>5.5</SA_CombatDroneGunner>

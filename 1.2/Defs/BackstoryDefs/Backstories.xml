@@ -2,11 +2,25 @@
 <Defs>
 
     <SyntheticAndroids.BackstoryDef>
+        <defName>SA_AndroidCreated</defName>
+        <title>Manufactured</title>
+        <titleShort>Manufactured</titleShort>
+        <baseDescription>This android was built, it had no childhood.</baseDescription>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>SA_Adnroid</li>
+            <li>SA_AdnroidCombat</li>
+        </spawnCategories>
+        <shuffleable>false</shuffleable>
+        <saveKeyIdentifier>SA_AndroidTest45</saveKeyIdentifier>
+    </SyntheticAndroids.BackstoryDef>
+
+    <SyntheticAndroids.BackstoryDef>
         <defName>SA_AndroidTest</defName>
         <title>Test Android</title>
         <titleShort>Test Adnroid</titleShort>
         <baseDescription>Grown in a vat, this body is basically brain-dead and can not live on its own.</baseDescription>
-        <slot>Childhood</slot>
+        <slot>Adulthood</slot>
         <workDisables>
             <li>Animals</li>
             <li>Artistic</li>
@@ -24,12 +38,11 @@
             <li>Social</li>
         </workDisables>
         <spawnCategories>
-            <li>Civil</li>
             <li>SA_Adnroid</li>
             <li>SA_AdnroidCombat</li>
         </spawnCategories>
         <shuffleable>false</shuffleable>
-        <saveKeyIdentifier>SA_AndroidTest45</saveKeyIdentifier>
+        <saveKeyIdentifier>SA_AndroidTest46</saveKeyIdentifier>
     </SyntheticAndroids.BackstoryDef>
 
 </Defs>

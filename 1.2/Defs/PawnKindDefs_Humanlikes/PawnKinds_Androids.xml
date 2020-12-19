@@ -10,10 +10,23 @@
 		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<defaultFactionType>OutlanderCivil</defaultFactionType>
 		<maxGenerationAge>250</maxGenerationAge>
+		<isFighter>false</isFighter>
 		<apparelTags>
 			<li>IndustrialBasic</li>
 			<li>IndustrialAdvanced</li>
 		</apparelTags>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>SA_Adnroid</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        <disallowedTraits>
+			<li>Wimp</li>
+			<li>BodyPurist</li>
+        </disallowedTraits>
+		<apparelColor>(222,222,222)</apparelColor>
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="SA_AndroidBase">
@@ -21,7 +34,6 @@
 		<label>worker drone</label>
 		<combatPower>35</combatPower>
 		<itemQuality>Poor</itemQuality>
-		<isFighter>false</isFighter>
 		<gearHealthRange>0.2~2.0</gearHealthRange>
 		<weaponTags>
 			<li>Gun</li>
@@ -38,11 +50,9 @@
 		<label>social drone</label>
 		<combatPower>35</combatPower>
 		<itemQuality>Poor</itemQuality>
-		<isFighter>false</isFighter>
 		<gearHealthRange>0.2~2.0</gearHealthRange>
 		<weaponTags>
 			<li>Gun</li>
-			<li>MedievalMeleeBasic</li>
 		</weaponTags>
 		<weaponMoney>65~250</weaponMoney>
 		<apparelMoney>200~400</apparelMoney>
@@ -55,11 +65,9 @@
 		<label>assistant drone</label>
 		<combatPower>35</combatPower>
 		<itemQuality>Poor</itemQuality>
-		<isFighter>false</isFighter>
 		<gearHealthRange>0.2~2.0</gearHealthRange>
 		<weaponTags>
 			<li>Gun</li>
-			<li>MedievalMeleeBasic</li>
 		</weaponTags>
 		<weaponMoney>65~250</weaponMoney>
 		<apparelMoney>200~400</apparelMoney>
@@ -72,11 +80,9 @@
 		<label>medic drone</label>
 		<combatPower>35</combatPower>
 		<itemQuality>Poor</itemQuality>
-		<isFighter>false</isFighter>
 		<gearHealthRange>0.2~2.0</gearHealthRange>
 		<weaponTags>
 			<li>Gun</li>
-			<li>MedievalMeleeBasic</li>
 		</weaponTags>
 		<weaponMoney>65~250</weaponMoney>
 		<apparelMoney>200~400</apparelMoney>
@@ -119,6 +125,119 @@
             </subOptionsChooseOne>
         </inventoryOptions>
 	</PawnKindDef>
+	
+	<!--=============== Special Androids	====================-->
+	
+    <PawnKindDef ParentName="SA_AndroidBase">
+        <defName>SA_AndroidSlave</defName>
+        <label>android slave</label>
+        <combatPower>30</combatPower>
+        <baseRecruitDifficulty>0.30</baseRecruitDifficulty>
+        <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.2~0.8</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelMoney>0~350</apparelMoney>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="SA_AndroidBase">
+        <defName>SA_CorruptedAndroid</defName>
+        <label>corrupted android</label>
+        <combatPower>70</combatPower>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>SA_Adnroid</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+        <biocodeWeaponChance>0</biocodeWeaponChance>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsMoney>500~500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <canBeSapper>true</canBeSapper>
+		<permanentEnemy>true</permanentEnemy>
+    </PawnKindDef>
+	
+    <PawnKindDef ParentName="SA_AndroidBase">
+        <defName>SA_AndroidRefugee</defName>
+        <label>android refugee</label>
+        <apparelMoney>0~1000</apparelMoney>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="SA_AndroidBase">
+        <defName>SA_AndroidRefugee_Clothed</defName>
+        <label>android refugee</label>
+        <apparelMoney>200~1000</apparelMoney>
+        <gearHealthRange>1~1</gearHealthRange>
+        <disallowedTraits>
+            <li>Nudist</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="SA_AndroidBase">
+        <defName>SA_AncientAndroid</defName>
+        <label>ancient android</label>
+        <combatPower>100</combatPower>
+        <baseRecruitDifficulty>0.30</baseRecruitDifficulty>
+        <defaultFactionType>AncientsHostile</defaultFactionType>
+        <apparelMoney>0~3800</apparelMoney>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+            <li>SpacerMilitary</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <weaponMoney>300~900</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <techHediffsMoney>2000~3000</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+            <li>AdvancedWeapon</li>
+        </techHediffsTags>
+        <techHediffsChance>0.40</techHediffsChance>
+        <requiredWorkTags>
+            <li>Violent</li>
+        </requiredWorkTags>
+    </PawnKindDef>
+	
+	<!--=============== Androids for Player	====================-->
+	
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>SA_AndroidColonist</defName>
+        <label>colonist</label>
+        <race>SA_Android</race>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+        </apparelTags>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <apparelMoney>350~600</apparelMoney>
+        <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+        <techHediffsChance>0.03</techHediffsChance>
+        <techHediffsMoney>50~800</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+    </PawnKindDef>
 
 	<!--=============== Androids for Combat	====================-->
 
@@ -138,6 +257,13 @@
             <li>ImplantEmpireCommon</li>
         </techHediffsTags>
         <canBeSapper>true</canBeSapper>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>SA_AdnroidCombat</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
         <inventoryOptions>
             <skipChance>0.95</skipChance>
             <subOptionsChooseOne>
@@ -147,6 +273,11 @@
                 </li>
             </subOptionsChooseOne>
         </inventoryOptions>
+        <disallowedTraits>
+			<li>Wimp</li>
+			<li>BodyPurist</li>
+        </disallowedTraits>
+		<apparelColor>(222,222,222)</apparelColor>
     </PawnKindDef>
 
     <PawnKindDef ParentName="SA_AndroidCombatBase">
