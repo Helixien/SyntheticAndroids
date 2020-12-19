@@ -534,6 +534,7 @@
 			<ThingDef>SA_PersonaCore</ThingDef>
 			<HediffDef>SA_PersonaCore</HediffDef>
 		</descriptionHyperlinks>
+        <workerClass>SyntheticAndroids.Recipe_InstallPersonaCore</workerClass>
 		<jobString>Installing persona core.</jobString>
 		<ingredients>
 			<li>

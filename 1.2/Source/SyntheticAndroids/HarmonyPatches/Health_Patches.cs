@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
+using static Verse.PawnCapacityUtility;
 
 namespace SyntheticAndroids
 {
@@ -226,6 +227,50 @@ namespace SyntheticAndroids
 			}
 			return true;
 		}
+
+		public static void Postfix(Pawn_HealthTracker __instance, Pawn ___pawn, bool __result)
+        {
+			if (__result)
+            {
+				var archotechPsychicDisplacer = ___pawn.health.hediffSet.GetFirstHediffOfDef(SADefOf.SA_ArchotechPsychicDisplacer);
+				if (archotechPsychicDisplacer != null)
+                {
+					var hostiles = ___pawn.Map.listerThings.ThingsInGroup(ThingRequestGroup.AttackTarget).Where(x => x.HostileTo(___pawn));
+					IntVec3 loc = IntVec3.Invalid;
+					if (CellFinderLoose.TryFindRandomNotEdgeCellWith(10, (IntVec3 x) => hostiles.Where(y => 50 > y.Position.DistanceTo(x)).Count() == 0 && x.Walkable(___pawn.Map), ___pawn.Map, out loc))
+                    {
+						var map = ___pawn.Map;
+						var select = Find.Selector.IsSelected(___pawn);
+						___pawn.DeSpawn(DestroyMode.Vanish);
+						GenPlace.TryPlaceThing(___pawn, loc, map, ThingPlaceMode.Near);
+						if (select)
+                        {
+							Find.Selector.Select(___pawn);
+                        }
+						___pawn.health.RemoveHediff(archotechPsychicDisplacer);
+
+						var tmpHediffsToTend = new List<Hediff>();
+						List<Hediff> hediffs = ___pawn.health.hediffSet.hediffs;
+						for (int i = 0; i < hediffs.Count; i++)
+						{
+							if (hediffs[i].TendableNow())
+							{
+								tmpHediffsToTend.Add(hediffs[i]);
+							}
+						}
+						foreach (var hediff in tmpHediffsToTend)
+                        {
+							for (int i = 0; i < tmpHediffsToTend.Count; i++)
+							{
+								tmpHediffsToTend[i].Tended_NewTemp(1f, 1f, i);
+							}
+						}
+
+					}
+				}
+			}
+        }
+
 	}
 
 	[HarmonyPatch(typeof(HediffUtility), "CanHealNaturally")]
@@ -256,27 +301,27 @@ namespace SyntheticAndroids
 		}
 	}
 
-	[HarmonyPatch(typeof(Pawn_HealthTracker), "AddHediff", new Type[]
-	{
-		typeof(Hediff),
-		typeof(BodyPartRecord),
-		typeof(DamageInfo?),
-		typeof(DamageWorker.DamageResult),
-	})]
-	public class Patch_AddHediff
-	{
-		private static bool Prefix(Pawn ___pawn, Hediff hediff, BodyPartRecord part = null, DamageInfo? dinfo = null, DamageWorker.DamageResult result = null)
-		{
-			if (___pawn.IsAndroid())
-			{
-				if (hediff is Hediff_Addiction)
-				{
-					return false;
-				}
-			}
-			return true;
-		}
-	}
+	//[HarmonyPatch(typeof(Pawn_HealthTracker), "AddHediff", new Type[]
+	//{
+	//	typeof(Hediff),
+	//	typeof(BodyPartRecord),
+	//	typeof(DamageInfo?),
+	//	typeof(DamageWorker.DamageResult),
+	//})]
+	//public class Patch_AddHediff
+	//{
+	//	private static bool Prefix(Pawn ___pawn, Hediff hediff, BodyPartRecord part = null, DamageInfo? dinfo = null, DamageWorker.DamageResult result = null)
+	//	{
+	//		if (___pawn != null && ___pawn.IsAndroid())
+	//		{
+	//			if (hediff is Hediff_Addiction)
+	//			{
+	//				return false;
+	//			}
+	//		}
+	//		return true;
+	//	}
+	//}
 
 	[HarmonyPatch(typeof(PawnDownedWiggler), "WigglerTick")]
 	public static class WigglerTick_Patch

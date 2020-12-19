@@ -64,6 +64,7 @@
     <Compile Include="HarmonyPatches\StunHandler_Patches.cs" />
     <Compile Include="HarmonyPatches\Need_Patches.cs" />
     <Compile Include="Hediffs\Hediff_Freezing.cs" />
+    <Compile Include="Hediffs\ArchotechPsychicDisplacer.cs" />
     <Compile Include="Hediffs\Hediff_Overheating.cs" />
     <Compile Include="Jobs\JobDriver_ConsumeNeutroamine.cs" />
     <Compile Include="Jobs\JobDriver_AndroidLayDown.cs" />
@@ -78,6 +79,7 @@
     <Compile Include="PawnCapacities\PawnCapacityWorker_Recharging.cs" />
     <Compile Include="PawnCapacities\PawnCapacityWorker_OrganicProcessing.cs" />
     <Compile Include="PawnCapacities\PawnCapacityWorker_Cooling.cs" />
+    <Compile Include="Recipes\AssignAndroidCompToAndroids.cs" />
     <Compile Include="SA_Utils.cs" />
     <Compile Include="SADefOf.cs" />
     <Compile Include="HarmonyPatches\HarmonyInit.cs" />

@@ -44,5 +44,7 @@ namespace SyntheticAndroids
         public static PawnKindDef SA_AncientAndroid;
         public static TraitDef SA_Sentient;
 
+        public static HediffDef SA_ArchotechPsychicDisplacer;
+
     }
 }

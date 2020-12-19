@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\GAMES\\Rimworld\\Mods\\SyntheticAndroids\\1.2\\Source\\SyntheticAndroids\\SyntheticAndroids.csproj": {}
+    "C:\\GAMES\\Rimworld\\Mods\\SyntheticAndroids\\1.2\\Source\\SyntheticAndroids\\SyntheticAndroids.csproj": {}
   },
   "projects": {
-    "c:\\GAMES\\Rimworld\\Mods\\SyntheticAndroids\\1.2\\Source\\SyntheticAndroids\\SyntheticAndroids.csproj": {
+    "C:\\GAMES\\Rimworld\\Mods\\SyntheticAndroids\\1.2\\Source\\SyntheticAndroids\\SyntheticAndroids.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\GAMES\\Rimworld\\Mods\\SyntheticAndroids\\1.2\\Source\\SyntheticAndroids\\SyntheticAndroids.csproj",
+        "projectUniqueName": "C:\\GAMES\\Rimworld\\Mods\\SyntheticAndroids\\1.2\\Source\\SyntheticAndroids\\SyntheticAndroids.csproj",
         "projectName": "SyntheticAndroids",
-        "projectPath": "c:\\GAMES\\Rimworld\\Mods\\SyntheticAndroids\\1.2\\Source\\SyntheticAndroids\\SyntheticAndroids.csproj",
+        "projectPath": "C:\\GAMES\\Rimworld\\Mods\\SyntheticAndroids\\1.2\\Source\\SyntheticAndroids\\SyntheticAndroids.csproj",
         "packagesPath": "C:\\Users\\Vova\\.nuget\\packages\\",
-        "outputPath": "c:\\GAMES\\Rimworld\\Mods\\SyntheticAndroids\\1.2\\Source\\SyntheticAndroids\\obj\\",
+        "outputPath": "C:\\GAMES\\Rimworld\\Mods\\SyntheticAndroids\\1.2\\Source\\SyntheticAndroids\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
