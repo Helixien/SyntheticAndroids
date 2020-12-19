@@ -91,7 +91,7 @@
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <techHediffsChance>0.15</techHediffsChance>
         <techHediffsMoney>700~1200</techHediffsMoney>
-        <weaponMoney>500~800</weaponMoney>
+        <weaponMoney>600~900</weaponMoney>
         <weaponTags>
             <li>SniperRifle</li>
         </weaponTags>

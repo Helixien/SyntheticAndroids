@@ -4,7 +4,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li/kindDef[Name = "Combat"]/options/</xpath>
+				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options</xpath>
 				<value>
 					<SA_CombatDroneHeavy>0.5</SA_CombatDroneHeavy>
 					<SA_CombatDroneSlasher>2.5</SA_CombatDroneSlasher>
@@ -18,7 +18,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li/kindDef[Name = "Peaceful"]/options/</xpath>
+				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
 				<value>
 					<SA_CombatDroneGunner>3.5</SA_CombatDroneGunner>
 				</value>
@@ -29,7 +29,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li/kindDef[Name = "Trader"]/guards/</xpath>
+				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
 				<value>
 					<SA_CombatDroneHeavy>0.5</SA_CombatDroneHeavy>
 					<SA_CombatDroneSlasher>2.5</SA_CombatDroneSlasher>
@@ -43,7 +43,7 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/FactionDef[@Name = "OutlanderFactionBase"]/pawnGroupMakers/li/kindDef[Name = "Settlement"]/options/</xpath>
+				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
 				<value>
 					<SA_CombatDroneHeavy>0.5</SA_CombatDroneHeavy>
 					<SA_CombatDroneSlasher>2.5</SA_CombatDroneSlasher>
