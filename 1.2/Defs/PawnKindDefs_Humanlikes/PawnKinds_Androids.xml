@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <PawnKindDef Name="SA_AndroidCombatBase" Abstract="True">
+        <race>SA_Android</race>
+        <combatPower>75</combatPower>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <itemQuality>Normal</itemQuality>
+        <gearHealthRange>0.7~2.3</gearHealthRange>
+        <maxGenerationAge>250</maxGenerationAge>
+        <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+        <biocodeWeaponChance>0</biocodeWeaponChance>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsMoney>500~500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <canBeSapper>true</canBeSapper>
+        <inventoryOptions>
+            <skipChance>0.95</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>1</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="SA_AndroidCombatBase">
+        <defName>SA_CombatDroneHeavy</defName>
+        <label>heavy combat drone</label>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelMoney>400~700</apparelMoney>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsMoney>500~500</techHediffsMoney>
+        <weaponMoney>1200~1200</weaponMoney>
+        <weaponTags>
+            <li>GunHeavy</li>
+            <li>GunSingleUse</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="SA_AndroidCombatBase">
+        <defName>SA_CombatDroneGunner</defName>
+        <label>combat drone</label>
+        <combatPower>85</combatPower>
+        <gearHealthRange>0.7~3.2</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelMoney>400~700</apparelMoney>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>700~1200</techHediffsMoney>
+        <weaponMoney>500~800</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="SA_AndroidCombatBase">
+        <defName>SA_CombatDroneSniper</defName>
+        <label>sniper drone</label>
+        <combatPower>110</combatPower>
+        <gearHealthRange>0.7~3.2</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelMoney>1000~1500</apparelMoney>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>700~1200</techHediffsMoney>
+        <weaponMoney>500~800</weaponMoney>
+        <weaponTags>
+            <li>SniperRifle</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="SA_AndroidCombatBase">
+        <defName>SA_CombatDroneSlasher</defName>
+        <label>slasher drone</label>
+        <combatPower>150</combatPower>
+        <gearHealthRange>0.7~3.2</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>Apparel_ShieldBelt</li>
+        </apparelRequired>
+        <apparelMoney>1000~1500</apparelMoney>
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>700~1200</techHediffsMoney>
+        <weaponMoney>200~500</weaponMoney>
+        <weaponTags>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+        </weaponTags>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="SA_AndroidCombatBase">
+        <defName>SA_CombatDroneElite</defName>
+        <label>elite combat drone</label>
+        <combatPower>150</combatPower>
+        <gearHealthRange>1~1</gearHealthRange>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>IndustrialMilitaryAdvanced</li>
+            <li>SpacerMilitary</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelMoney>2500~3500</apparelMoney>
+        <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+        <techHediffsChance>0.35</techHediffsChance>
+        <techHediffsMoney>1000~1200</techHediffsMoney>
+        <weaponMoney>500~1400</weaponMoney>
+        <weaponTags>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="MercenaryEliteTierBase">
+        <defName>SA_PirateBoss</defName>
+        <label>boss</label>
+        <labelPlural>bosses</labelPlural>
+        <race>SA_Android</race>
+        <factionLeader>true</factionLeader>
+        <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+        <maxGenerationAge>250</maxGenerationAge>
+        <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+        <biocodeWeaponChance>0</biocodeWeaponChance>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <techHediffsTags inherit="False">
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+    </PawnKindDef>
+
+</Defs>
