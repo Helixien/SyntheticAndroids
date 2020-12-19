@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnKindDef ParentName="SA_AndroidBase" Name="SA_AndroidSentientBase" Abstract="True">
+	</PawnKindDef>
+
+    <PawnKindDef ParentName="SA_AndroidSentientBase">
+        <defName>SA_StrangerInBlack</defName>
+        <label>stranger in black</label>
+        <labelMale>man in black</labelMale>
+        <labelFemale>woman in black</labelFemale>
+        <labelPlural>strangers in black</labelPlural>
+        <defaultFactionType>OutlanderCivil</defaultFactionType>
+        <combatPower>70</combatPower>
+        <minGenerationAge>120</minGenerationAge>
+        <maxGenerationAge>465</maxGenerationAge>
+        <isFighter>true</isFighter>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <requiredWorkTags>
+            <li>Violent</li>
+            <li>Caring</li>
+        </requiredWorkTags>
+        <invNutrition>10.0</invNutrition>
+        <inventoryOptions>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>5</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        <gearHealthRange>1~1</gearHealthRange>
+        <itemQuality>Good</itemQuality>
+        <weaponMoney>500~500</weaponMoney>
+        <weaponTags>
+            <li>Revolver</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>Apparel_CollarShirt</li>
+            <li>Apparel_Pants</li>
+            <li>Apparel_Duster</li>
+            <li>Apparel_FlakVest</li>
+            <li>Apparel_CowboyHat</li>
+        </apparelRequired>
+        <apparelColor>(58,58,58)</apparelColor>
+    </PawnKindDef>
+
+</Defs>
