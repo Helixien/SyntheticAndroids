@@ -342,5 +342,217 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SA_ArchotechFluidHeater</addsHediff>
 	</RecipeDef>
+	
+	<!-- Archotech heat disposer -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SA_ArchotechHeatDisposer</defName>
+		<label>archotech heat disposer</label>
+		<labelNoun>an archotech heat disposer</labelNoun>
+		<description>An installed archotech heat disposer.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_ArchotechHeatDisposer</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SA_ArchotechHeatDisposer</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>false</solid>
+			<partEfficiency>1.5</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>SA_ArchotechHeatDisposer</defName>
+		<label>archotech heat disposer</label>
+		<description>ph</description>
+		<descriptionHyperlinks>
+			<RecipeDef>SA_InstallArchotechHeatDisposer</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallArchotechHeatDisposer</defName>
+		<label>install archotech heat disposer</label>
+		<description>Install an archotech heat disposer.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_ArchotechHeatDisposer</ThingDef>
+			<HediffDef>SA_ArchotechHeatDisposer</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech heat disposer.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_ArchotechHeatDisposer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_ArchotechHeatDisposer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_HeatSink</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_ArchotechHeatDisposer</addsHediff>
+	</RecipeDef>
+	
+	<!-- Archotech psychic displacer -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SA_ArchotechPsychicDisplacer</defName>
+		<label>psychic displacer</label>
+		<labelNoun>an psychic displacer</labelNoun>
+		<description>An installed archotech displacer.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_ArchotechPsychicDisplacer</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SA_ArchotechPsychicDisplacer</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>false</solid>
+			<partEfficiency>1.5</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>SA_ArchotechPsychicDisplacer</defName>
+		<label>psychic displacer</label>
+		<description>ph</description>
+		<descriptionHyperlinks>
+			<RecipeDef>SA_InstallArchotechPsychicDisplacer</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallArchotechPsychicDisplacer</defName>
+		<label>install psychic displacer</label>
+		<description>Install a psychic displacer.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_ArchotechPsychicDisplacer</ThingDef>
+			<HediffDef>SA_ArchotechPsychicDisplacer</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing psychic displacer.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_ArchotechPsychicDisplacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_ArchotechPsychicDisplacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_HeatSink</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_ArchotechPsychicDisplacer</addsHediff>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallArchotechPsychicDisplacerHuman</defName>
+		<label>install psychic displacer</label>
+		<description>Install a psychic displacer.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_ArchotechPsychicDisplacer</ThingDef>
+			<HediffDef>SA_ArchotechPsychicDisplacer</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing psychic displacer.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_ArchotechPsychicDisplacer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_ArchotechPsychicDisplacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_HeatSink</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_ArchotechPsychicDisplacer</addsHediff>
+	</RecipeDef>
+	
+	<!-- Archotech persona core -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SA_PersonaCore</defName>
+		<label>persona core</label>
+		<labelNoun>a persona core</labelNoun>
+		<description>An installed persona core.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_PersonaCore</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SA_PersonaCore</spawnThingOnRemoved>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>SA_PersonaCore</defName>
+		<label>persona core</label>
+		<description>ph</description>
+		<descriptionHyperlinks>
+			<RecipeDef>SA_InstallPersonaCore</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallPersonaCore</defName>
+		<label>install persona core</label>
+		<description>Install a persona core.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_PersonaCore</ThingDef>
+			<HediffDef>SA_PersonaCore</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing persona core.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_PersonaCore</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_PersonaCore</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_CentralProcessor</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_PersonaCore</addsHediff>
+	</RecipeDef>
 
 </Defs>
