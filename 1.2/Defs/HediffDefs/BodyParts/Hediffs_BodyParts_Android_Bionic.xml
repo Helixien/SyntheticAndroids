@@ -364,5 +364,65 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SA_AdvancedFluidPump</addsHediff>
 	</RecipeDef>
+	
+	<!-- Advanced Fluid Heater -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SA_AdvancedFluidHeater</defName>
+		<label>advanced fluid heater</label>
+		<labelNoun>an advanced fluid heater</labelNoun>
+		<description>A installed advanced fluid heater.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_AdvancedFluidHeater</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SA_AdvancedFluidHeater</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>SA_AdvancedFluidHeater</defName>
+		<label>advanced fluid heater</label>
+		<description>ph</description>
+		<descriptionHyperlinks>
+			<RecipeDef>SA_InstallAdvancedFluidHeater</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+	</ThingDef>
+
+	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallAdvancedFluidHeater</defName>
+		<label>install advanced fluid heater</label>
+		<description>Install an advanced fluid heater.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_AdvancedFluidHeater</ThingDef>
+			<HediffDef>SA_AdvancedFluidHeater</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced fluid heater.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_AdvancedFluidHeater</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_AdvancedFluidHeater</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_FluidHeater</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_AdvancedFluidHeater</addsHediff>
+	</RecipeDef>
 
 </Defs>
