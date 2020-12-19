@@ -108,6 +108,7 @@
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>2.0</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
 

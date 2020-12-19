@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!--=============== Vanilla Implants	====================-->
+
     <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
         <defName>SA_InstallBionicEye</defName>
         <label>install bionic eye</label>
@@ -180,5 +182,187 @@
         </appliedOnFixedBodyParts>
         <addsHediff>BionicEar</addsHediff>
     </RecipeDef>
+
+	<!--=============== New Implants (Androids Only)	====================-->
+
+	<!-- Advanced Fluid Processor -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SA_AdvancedFluidProcessor</defName>
+		<label>advanced fluid processor</label>
+		<labelNoun>an advanced fluid processor</labelNoun>
+		<description>An installed advanced fluid processor.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_AdvancedFluidProcessor</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SA_AdvancedFluidProcessor</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>SA_AdvancedFluidProcessor</defName>
+		<label>advanced fluid processor</label>
+		<description>ph</description>
+		<descriptionHyperlinks>
+			<RecipeDef>SA_InstallAdvancedFluidProcessor</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+	</ThingDef>
+
+	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallAdvancedFluidProcessor</defName>
+		<label>install advanced fluid processor</label>
+		<description>Install an advanced fluid processor.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_AdvancedFluidProcessor</ThingDef>
+			<HediffDef>SA_AdvancedFluidProcessor</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced fluid processor.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_AdvancedFluidProcessor</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_AdvancedFluidProcessor</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_FluidProcessor</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_AdvancedFluidProcessor</addsHediff>
+	</RecipeDef>
+	
+	<!-- Advanced Power Cell -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SA_AdvancedPowerCell</defName>
+		<label>advanced power cell</label>
+		<labelNoun>an advanced power cell</labelNoun>
+		<description>A installed advanced power cell.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_AdvancedPowerCell</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SA_AdvancedPowerCell</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>SA_AdvancedPowerCell</defName>
+		<label>advanced fluid processor</label>
+		<description>ph</description>
+		<descriptionHyperlinks>
+			<RecipeDef>SA_InstallAdvancedPowerCell</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+	</ThingDef>
+
+	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallAdvancedPowerCell</defName>
+		<label>install advanced power cell</label>
+		<description>Install an advanced power cell.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_AdvancedPowerCell</ThingDef>
+			<HediffDef>SA_AdvancedPowerCell</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing advanced power cell.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_AdvancedPowerCell</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_AdvancedPowerCell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_PowerCell</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_AdvancedPowerCell</addsHediff>
+	</RecipeDef>
+	
+	<!-- Advanced Fluid Pump -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SA_AdvancedFluidPump</defName>
+		<label>advanced fluid pump</label>
+		<labelNoun>an advanced fluid pump</labelNoun>
+		<description>A installed advanced fluid pump.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_AdvancedFluidPump</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SA_AdvancedFluidPump</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartBionicBase">
+		<defName>SA_AdvancedFluidPump</defName>
+		<label>advanced fluid pump</label>
+		<description>ph</description>
+		<descriptionHyperlinks>
+			<RecipeDef>SA_InstallAdvancedFluidPump</RecipeDef>
+		</descriptionHyperlinks>
+		<costList>
+			<Plasteel>15</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+	</ThingDef>
+
+	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallAdvancedFluidPump</defName>
+		<label>install fluid pump</label>
+		<description>Install an fluid pump.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_AdvancedFluidPump</ThingDef>
+			<HediffDef>SA_AdvancedFluidPump</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing fluid pump.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_AdvancedFluidPump</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_AdvancedFluidPump</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_FluidPump</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_AdvancedFluidPump</addsHediff>
+	</RecipeDef>
 
 </Defs>
