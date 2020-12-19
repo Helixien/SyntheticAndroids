@@ -12,7 +12,7 @@
             <li>SA_AdnroidCombat</li>
         </spawnCategories>
         <shuffleable>false</shuffleable>
-        <saveKeyIdentifier>SA_AndroidTest45</saveKeyIdentifier>
+        <saveKeyIdentifier>SA_AndroidCreated45</saveKeyIdentifier>
     </SyntheticAndroids.BackstoryDef>
 
     <SyntheticAndroids.BackstoryDef>

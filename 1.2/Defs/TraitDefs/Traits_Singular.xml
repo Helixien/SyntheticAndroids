@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <TraitDef>
+    <SyntheticAndroids.AndroidTraitDef>
         <defName>SA_Sentient</defName>
-        <commonality>0</commonality>
+        <commonality>9999</commonality>
         <degreeDatas>
             <li>
                 <label>sentient</label>
@@ -13,6 +13,9 @@
         <conflictingTraits>
             <li>SlowLearner</li>
         </conflictingTraits>
-    </TraitDef>
+		<allowedPawnKindDefs>
+			<li>SA_StrangerInBlack</li>
+		</allowedPawnKindDefs>
+    </SyntheticAndroids.AndroidTraitDef>
 
 </Defs>

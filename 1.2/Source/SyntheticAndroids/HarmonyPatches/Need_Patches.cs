@@ -9,7 +9,6 @@ using Verse;
 
 namespace SyntheticAndroids
 {
-
 	[HarmonyPatch(typeof(Pawn_NeedsTracker), "ShouldHaveNeed")]
 	public static class ShouldHaveNeed_Patch
 	{

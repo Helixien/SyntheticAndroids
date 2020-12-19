@@ -29,6 +29,15 @@ namespace SyntheticAndroids
                 return androidComp;
             }
         }
+
+        public static bool HasTrait(this Pawn pawn, TraitDef traitDef)
+        {
+            if (traitDef != null && (pawn?.story?.traits?.HasTrait(traitDef) ?? false))
+            {
+                return true;
+            }
+            return false;
+        }
         public static bool IsAndroid(this Pawn pawn)
         {
             if (pawn.def == SADefOf.SA_Android)
