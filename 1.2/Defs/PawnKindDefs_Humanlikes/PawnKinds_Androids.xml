@@ -68,6 +68,23 @@
 	</PawnKindDef>
 	
 	<PawnKindDef ParentName="SA_AndroidBase">
+		<defName>SA_MedicDrone</defName>
+		<label>medic drone</label>
+		<combatPower>35</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<weaponTags>
+			<li>Gun</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>65~250</weaponMoney>
+		<apparelMoney>200~400</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<techHediffsChance>0</techHediffsChance>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SA_AndroidBase">
 		<defName>SA_BodyguardDrone</defName>
 		<label>bodyguard</label>
 		<combatPower>75</combatPower>
