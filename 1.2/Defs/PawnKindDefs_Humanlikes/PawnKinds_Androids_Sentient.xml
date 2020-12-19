@@ -2,6 +2,27 @@
 <Defs>
 
 	<PawnKindDef ParentName="SA_AndroidBase" Name="SA_AndroidSentientBase" Abstract="True">
+		<modExtensions>
+			<li Class="SyntheticAndroids.PawnSpawnOptions">
+				<disallowedTraits>
+					<li>Abrasive</li>
+					<li>AnnoyingVoice</li>
+					<li>Ascetic</li>
+					<li>Asexual</li>
+					<li>Beauty</li>
+					<li>Bisexual</li>
+					<li>Bloodlust</li>
+					<li>BodyPurist</li>
+					<li>Brawler</li>
+					<li>TorturedArtist</li>
+					<li>Tough</li>
+					<li>Transhumanist</li>
+					<li>Undergrounder</li>
+					<li>Wimp</li>
+				</disallowedTraits>
+				
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
     <PawnKindDef ParentName="SA_AndroidSentientBase">
@@ -12,7 +33,7 @@
         <labelPlural>strangers in black</labelPlural>
         <defaultFactionType>OutlanderCivil</defaultFactionType>
         <combatPower>70</combatPower>
-        <minGenerationAge>120</minGenerationAge>
+        <minGenerationAge>60</minGenerationAge>
         <maxGenerationAge>465</maxGenerationAge>
         <isFighter>true</isFighter>
         <chemicalAddictionChance>0</chemicalAddictionChance>

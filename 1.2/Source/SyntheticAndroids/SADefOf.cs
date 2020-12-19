@@ -42,6 +42,7 @@ namespace SyntheticAndroids
         public static PawnKindDef SA_AndroidRefugee;
         public static PawnKindDef SA_AndroidRefugee_Clothed;
         public static PawnKindDef SA_AncientAndroid;
+        public static TraitDef SA_Sentient;
 
     }
 }
