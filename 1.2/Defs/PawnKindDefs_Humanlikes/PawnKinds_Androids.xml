@@ -1,15 +1,119 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
+	<!--=============== Normal Androids	====================-->
+
+	<PawnKindDef Name="SA_AndroidBase" Abstract="True">
+		<race>SA_Android</race>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<defaultFactionType>OutlanderCivil</defaultFactionType>
+		<maxGenerationAge>250</maxGenerationAge>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SA_AndroidBase">
+		<defName>SA_WorkerDrone</defName>
+		<label>worker drone</label>
+		<combatPower>35</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<weaponTags>
+			<li>Gun</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>65~250</weaponMoney>
+		<apparelMoney>200~400</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<techHediffsChance>0</techHediffsChance>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SA_AndroidBase">
+		<defName>SA_SocialDrone</defName>
+		<label>social drone</label>
+		<combatPower>35</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<weaponTags>
+			<li>Gun</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>65~250</weaponMoney>
+		<apparelMoney>200~400</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<techHediffsChance>0</techHediffsChance>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SA_AndroidBase">
+		<defName>SA_AssistantDrone</defName>
+		<label>assistant drone</label>
+		<combatPower>35</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<weaponTags>
+			<li>Gun</li>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>65~250</weaponMoney>
+		<apparelMoney>200~400</apparelMoney>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<techHediffsChance>0</techHediffsChance>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="SA_AndroidBase">
+		<defName>SA_BodyguardDrone</defName>
+		<label>bodyguard</label>
+		<combatPower>75</combatPower>
+        <itemQuality>Normal</itemQuality>
+		<isFighter>true</isFighter>
+        <gearHealthRange>0.7~2.3</gearHealthRange>
+        <techHediffsChance>0.05</techHediffsChance>
+        <techHediffsMoney>500~1200</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <apparelMoney>400~700</apparelMoney>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <weaponMoney>500~800</weaponMoney>
+        <weaponTags>
+            <li>Gun</li>
+        </weaponTags>
+        <inventoryOptions>
+            <skipChance>0.95</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>3</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+	</PawnKindDef>
+
+	<!--=============== Androids for Combat	====================-->
+
     <PawnKindDef Name="SA_AndroidCombatBase" Abstract="True">
         <race>SA_Android</race>
         <combatPower>75</combatPower>
-        <chemicalAddictionChance>0</chemicalAddictionChance>
         <itemQuality>Normal</itemQuality>
         <gearHealthRange>0.7~2.3</gearHealthRange>
         <maxGenerationAge>250</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <biocodeWeaponChance>0</biocodeWeaponChance>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
         <techHediffsChance>0.05</techHediffsChance>
         <techHediffsMoney>500~500</techHediffsMoney>
         <techHediffsTags>

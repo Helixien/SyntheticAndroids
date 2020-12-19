@@ -11,29 +11,29 @@
 					<SA_CombatDroneGunner>3.5</SA_CombatDroneGunner>
 					<SA_CombatDroneElite>2.5</SA_CombatDroneElite>
 				</value>
-			</li>	
-		</operations>	
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
-				<value>
-					<SA_CombatDroneGunner>3.5</SA_CombatDroneGunner>
-				</value>
-			</li>	
-		</operations>	
-	</Operation>
-	
-	<Operation Class="PatchOperationSequence">
-		<operations>
+			</li>
 			<li Class="PatchOperationAdd">
 				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Trader"]/guards</xpath>
 				<value>
 					<SA_CombatDroneHeavy>0.5</SA_CombatDroneHeavy>
 					<SA_CombatDroneSlasher>2.5</SA_CombatDroneSlasher>
 					<SA_CombatDroneGunner>3.5</SA_CombatDroneGunner>
+					<SA_CombatDroneElite>2.5</SA_CombatDroneElite>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Peaceful"]/options</xpath>
+				<value>
+					<SA_CombatDroneGunner>3.5</SA_CombatDroneGunner>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+				<value>
+					<SA_CombatDroneHeavy>0.5</SA_CombatDroneHeavy>
+					<SA_CombatDroneSlasher>2.5</SA_CombatDroneSlasher>
+					<SA_CombatDroneGunner>3.5</SA_CombatDroneGunner>
+					<SA_CombatDroneSniper>1.0</SA_CombatDroneSniper>
 					<SA_CombatDroneElite>2.5</SA_CombatDroneElite>
 				</value>
 			</li>	
@@ -43,11 +43,55 @@
 	<Operation Class="PatchOperationSequence">
 		<operations>
 			<li Class="PatchOperationAdd">
-				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+				<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[commonality="100"]/options</xpath>
 				<value>
-					<SA_CombatDroneHeavy>0.5</SA_CombatDroneHeavy>
+					<SA_CombatDroneHeavy>1.0</SA_CombatDroneHeavy>
 					<SA_CombatDroneSlasher>2.5</SA_CombatDroneSlasher>
 					<SA_CombatDroneGunner>3.5</SA_CombatDroneGunner>
+					<SA_CombatDroneSniper>2.0</SA_CombatDroneSniper>
+					<SA_CombatDroneElite>2.5</SA_CombatDroneElite>
+					<SA_PirateBoss>2.5</SA_PirateBoss>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[commonality="30"]/options</xpath>
+				<value>
+					<SA_CombatDroneSlasher>2.5</SA_CombatDroneSlasher>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[commonality="20"]/options</xpath>
+				<value>
+					<SA_CombatDroneHeavy>1.0</SA_CombatDroneHeavy>
+					<SA_CombatDroneSlasher>2.5</SA_CombatDroneSlasher>
+					<SA_CombatDroneGunner>3.5</SA_CombatDroneGunner>
+					<SA_CombatDroneSniper>2.0</SA_CombatDroneSniper>
+					<SA_CombatDroneElite>2.5</SA_CombatDroneElite>
+					<SA_PirateBoss>2.5</SA_PirateBoss>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[commonality="15"]/options</xpath>
+				<value>
+					<SA_CombatDroneHeavy>4.0</SA_CombatDroneHeavy>
+					<SA_CombatDroneGunner>0.5</SA_CombatDroneGunner>
+					<SA_CombatDroneElite>0.5</SA_CombatDroneElite>
+					<SA_PirateBoss>0.5</SA_PirateBoss>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[commonality="10"]/options</xpath>
+				<value>
+					<SA_CombatDroneSniper>4.0</SA_CombatDroneSniper>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+				<value>
+					<SA_CombatDroneHeavy>0.5</SA_CombatDroneHeavy>
+					<SA_CombatDroneSlasher>3.5</SA_CombatDroneSlasher>
+					<SA_CombatDroneGunner>5.5</SA_CombatDroneGunner>
+					<SA_CombatDroneSniper>4.0</SA_CombatDroneSniper>
 					<SA_CombatDroneElite>2.5</SA_CombatDroneElite>
 				</value>
 			</li>	
