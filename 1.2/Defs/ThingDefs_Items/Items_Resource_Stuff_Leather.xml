@@ -11,12 +11,11 @@
             <color>(211,194,143)</color>
         </graphicData>
         <statBases>
-			<Mass>0.03</Mass>
+			<Mass>0.05</Mass>
             <MarketValue>4.2</MarketValue>
             <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
             <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
             <StuffPower_Insulation_Heat>12</StuffPower_Insulation_Heat>
-			<Mass>1</Mass>
         </statBases>
         <burnableByRecipe>true</burnableByRecipe>
         <stuffProps>

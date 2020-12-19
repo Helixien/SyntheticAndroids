@@ -77,7 +77,7 @@
             <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
             <intelligence>Humanlike</intelligence>
             <makesFootprints>true</makesFootprints>
-            <lifeExpectancy>250</lifeExpectancy>
+            <lifeExpectancy>500</lifeExpectancy>
             <leatherDef>SA_Skin_Android</leatherDef>
 			<fleshType>SA_AndroidFlesh</fleshType>
             <nameCategory>HumanStandard</nameCategory>
