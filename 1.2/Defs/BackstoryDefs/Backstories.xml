@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
+    <!-- Default childhood for androids -->
+
     <SyntheticAndroids.BackstoryDef>
         <defName>SA_AndroidCreated</defName>
         <title>Manufactured</title>
@@ -8,18 +10,111 @@
         <baseDescription>This android was built, it had no childhood.</baseDescription>
         <slot>Childhood</slot>
         <spawnCategories>
-            <li>SA_Adnroid</li>
-            <li>SA_AdnroidCombat</li>
+            <li>SA_Android</li>
+            <li>SA_AndroidCombat</li>
         </spawnCategories>
         <shuffleable>false</shuffleable>
         <saveKeyIdentifier>SA_AndroidCreated45</saveKeyIdentifier>
     </SyntheticAndroids.BackstoryDef>
+	
+    <!-- Adulthood backstories -->
 
     <SyntheticAndroids.BackstoryDef>
-        <defName>SA_AndroidTest</defName>
-        <title>Test Android</title>
-        <titleShort>Test Adnroid</titleShort>
-        <baseDescription>Grown in a vat, this body is basically brain-dead and can not live on its own.</baseDescription>
+        <defName>SA_MistreatedServant</defName>
+        <title>Mistreated Servant</title>
+        <titleShort>Servant</titleShort>
+        <baseDescription>{PAWN_nameDef} was purchased by an affluent Urbworld aristocrat and expected to cater to their every whim. Cooking, tailoring, and cleaning were all tasks designated to {PAWN_pronoun}. On particularly cold nights {PAWN_pronoun} was tasked with joining their master in bed after which they would awake the next morning with cuts, bruises, and a short-term memory wipe. When {PAWN_nameDef} discovered the origin of {PAWN_objective} mysterious wounds {PAWN_pronoun} decided to escape by any means necessary.</baseDescription>
+        <slot>Adulthood</slot>
+        <workDisables>
+            <li>Caring</li>
+        </workDisables>
+        <spawnCategories>
+            <li>SA_Android</li>
+        </spawnCategories>
+        <shuffleable>false</shuffleable>
+        <saveKeyIdentifier>SA_AndroidAdult46</saveKeyIdentifier>
+    </SyntheticAndroids.BackstoryDef>
+	
+    <SyntheticAndroids.BackstoryDef>
+        <defName>SA_Cryptokeeper</defName>
+        <title>Cryptokeeper</title>
+        <titleShort>Cryptokeeper</titleShort>
+        <baseDescription>{PAWN_nameDef} was assembled with a single task in mind, to oversee the prolonged preservation of patients in cryptosleep stasis. Monitoring power levels and patrolling for grave robbers made up the bulk of {PAWN_pronoun}’s routine. After a cure for the patient's disease was discovered, they were revived and continued on with their lives, leaving {PAWN_nameDef} taskless.</baseDescription>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>SA_Android</li>
+        </spawnCategories>
+        <shuffleable>false</shuffleable>
+        <saveKeyIdentifier>SA_AndroidAdult47</saveKeyIdentifier>
+    </SyntheticAndroids.BackstoryDef>
+	
+    <SyntheticAndroids.BackstoryDef>
+        <defName>SA_Confectionist</defName>
+        <title>Confectionist</title>
+        <titleShort>{PAWN_nameDef}’s entire life after leaving the assembly line has been based around making humans, particularly children, happy. {PAWN_pronoun} found the easiest way to do so was through sweets, and as a free Android they worked tirelessly to create the perfect candies and pastries. Years later and unbeknownst to {PAWN_nameDef}, it was discovered a primary ingredient was highly toxic to humans and resulted in thousands of deaths. Seeing no redemption, {PAWN_pronoun} decided to exile themself to a far off rimworld.</titleShort>
+        <baseDescription> </baseDescription>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>SA_Android</li>
+        </spawnCategories>
+        <shuffleable>false</shuffleable>
+        <saveKeyIdentifier>SA_AndroidAdult48</saveKeyIdentifier>
+    </SyntheticAndroids.BackstoryDef>
+	
+    <SyntheticAndroids.BackstoryDef>
+        <defName>SA_Influencer</defName>
+        <title>Influencer</title>
+        <titleShort>Influencer</titleShort>
+        <baseDescription>{PAWN_nameDef} was algorithmically designed to appease sweeping masses via social media. Multicolored hair, flawless skin and enough energy to sate billions of hungry viewers. Years of meticulous thumbnail design and makeup tutorials swiftly turned into decades without so much as a single misplaced hair or pimple. Viewers grew suspicious and accused {PAWN_nameDef} of being an Android, {PAWN_pronoun} was swiftly run off both social media and {PAWN_pronoun} home planet for deception.</baseDescription>
+        <slot>Adulthood</slot>
+        <workDisables>
+            <li>ManualDumb</li>
+        </workDisables>
+        <spawnCategories>
+            <li>SA_Android</li>
+        </spawnCategories>
+        <shuffleable>false</shuffleable>
+        <saveKeyIdentifier>SA_AndroidAdult49</saveKeyIdentifier>
+    </SyntheticAndroids.BackstoryDef>
+	
+    <SyntheticAndroids.BackstoryDef>
+        <defName>SA_GlitterworldZealot</defName>
+        <title>Glitterworld Zealot</title>
+        <titleShort>Zealot</titleShort>
+        <baseDescription>{PAWN_nameDef} is the high-tech creation of holy Clergymen from a far-off Glitterworld. {PAWN_pronoun} was programmed specifically to charm, manipulate, and even intimidate people attending service into paying their tithes. The work quickly took a toll on {PAWN_nameDef} after it was discovered the entity {PAWN_pronoun} collected alms for had a very aggressive stance against sentient AI built to represent humans. Torn between disabling themselves to uphold their own fervent beliefs or giving them up {PAWN_pronoun} chose the latter and renounced {PAWN_pronoun} faith.</baseDescription>
+        <slot>Adulthood</slot>
+        <spawnCategories>
+            <li>SA_AndroidSentient</li>
+        </spawnCategories>
+        <shuffleable>false</shuffleable>
+        <saveKeyIdentifier>SA_AndroidAdult50</saveKeyIdentifier>
+    </SyntheticAndroids.BackstoryDef>
+
+	
+    <SyntheticAndroids.BackstoryDef>
+        <defName>SA_FrontlineDrone</defName>
+        <title>FrontlineDrone</title>
+        <titleShort>Drone</titleShort>
+        <baseDescription>{PAWN_nameDef} was built to serve as cannon fodder in wars where human lives no longer were on the lines. {PAWN_pronoun} when he was discarded as outdated and no longer fit to face newer models of combat drones, {PAWN_pronoun} was sold off as cheap muscle to privateers. Over the years {PAWN_nameDef} has changed hands many times, serving under a multitude of factions, killing whoever needed killing.</baseDescription>
+        <slot>Adulthood</slot>
+        <workDisables>
+            <li>Caring</li>
+            <li>Intellectual</li>
+            <li>ManualSkilled</li>
+            <li>Social</li>
+        </workDisables>
+        <spawnCategories>
+            <li>SA_AndroidCombat</li>
+        </spawnCategories>
+        <shuffleable>false</shuffleable>
+        <saveKeyIdentifier>SA_AndroidAdult51</saveKeyIdentifier>
+    </SyntheticAndroids.BackstoryDef>
+
+    <SyntheticAndroids.BackstoryDef>
+        <defName>SA_TEST</defName>
+        <title>test</title>
+        <titleShort>test</titleShort>
+        <baseDescription> </baseDescription>
         <slot>Adulthood</slot>
         <workDisables>
             <li>Animals</li>
@@ -38,8 +133,8 @@
             <li>Social</li>
         </workDisables>
         <spawnCategories>
-            <li>SA_Adnroid</li>
-            <li>SA_AdnroidCombat</li>
+            <li>SA_Android</li>
+            <li>SA_AndroidCombat</li>
         </spawnCategories>
         <shuffleable>false</shuffleable>
         <saveKeyIdentifier>SA_AndroidTest46</saveKeyIdentifier>
