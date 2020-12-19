@@ -57,7 +57,7 @@
         <lifeStages>
             <li>
                 <bodyGraphicData>
-                    <texPath>Things/Pawn/Mechanoid/puppeteer</texPath>
+                    <texPath>Things/Pawn/Mechanoid/Puppeteer</texPath>
                     <graphicClass>Graphic_Multi</graphicClass>
                     <drawSize>1.5</drawSize>
                     <shadowData>

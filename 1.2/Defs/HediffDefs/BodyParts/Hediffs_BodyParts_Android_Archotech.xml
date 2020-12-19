@@ -1,95 +1,346 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
-    <defName>SA_InstallArchotechEye</defName>
-    <label>install archotech eye</label>
-    <description>Install an archotech eye.</description>
-    <descriptionHyperlinks>
-      <ThingDef>ArchotechEye</ThingDef>
-      <HediffDef>ArchotechEye</HediffDef>
-    </descriptionHyperlinks>
-    <jobString>Installing archotech eye.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ArchotechEye</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>ArchotechEye</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>SA_AndroidEye</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>ArchotechEye</addsHediff>
-  </RecipeDef>
+	<!--=============== Vanilla Implants	====================-->
 
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+        <defName>SA_InstallArchotechEye</defName>
+        <label>install archotech eye</label>
+        <description>Install an archotech eye.</description>
+        <descriptionHyperlinks>
+            <ThingDef>ArchotechEye</ThingDef>
+            <HediffDef>ArchotechEye</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing archotech eye.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ArchotechEye</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ArchotechEye</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>SA_AndroidEye</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>ArchotechEye</addsHediff>
+    </RecipeDef>
 
-  <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
-    <defName>SA_InstallArchotechArm</defName>
-    <label>install archotech arm</label>
-    <description>Install an archotech arm.</description>
-    <descriptionHyperlinks>
-      <ThingDef>ArchotechArm</ThingDef>
-      <HediffDef>ArchotechArm</HediffDef>
-    </descriptionHyperlinks>
-    <jobString>Installing archotech arm.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ArchotechArm</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>ArchotechArm</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Shoulder</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>ArchotechArm</addsHediff>
-  </RecipeDef>
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+        <defName>SA_InstallArchotechArm</defName>
+        <label>install archotech arm</label>
+        <description>Install an archotech arm.</description>
+        <descriptionHyperlinks>
+            <ThingDef>ArchotechArm</ThingDef>
+            <HediffDef>ArchotechArm</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing archotech arm.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ArchotechArm</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ArchotechArm</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Shoulder</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>ArchotechArm</addsHediff>
+    </RecipeDef>
 
-  <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
-    <defName>SA_InstallArchotechLeg</defName>
-    <label>install archotech leg</label>
-    <description>Install an archotech leg.</description>
-    <descriptionHyperlinks>
-      <ThingDef>ArchotechLeg</ThingDef>
-      <HediffDef>ArchotechLeg</HediffDef>
-    </descriptionHyperlinks>
-    <jobString>Installing archotech leg.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ArchotechLeg</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>ArchotechLeg</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Leg</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>ArchotechLeg</addsHediff>
-  </RecipeDef>
+    <RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+        <defName>SA_InstallArchotechLeg</defName>
+        <label>install archotech leg</label>
+        <description>Install an archotech leg.</description>
+        <descriptionHyperlinks>
+            <ThingDef>ArchotechLeg</ThingDef>
+            <HediffDef>ArchotechLeg</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing archotech leg.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ArchotechLeg</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ArchotechLeg</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Leg</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>ArchotechLeg</addsHediff>
+    </RecipeDef>
+	
+	<!--=============== New Implants (Androids Only)	====================-->
+
+	<!-- Archotech power cell -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SA_VanometricPowerCell</defName>
+		<label>vanometric power cell</label>
+		<labelNoun>an archotech power cell</labelNoun>
+		<description>An installed archotech power cell.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_VanometricPowerCell</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SA_VanometricPowerCell</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>2.0</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>SA_VanometricPowerCell</defName>
+		<label>archotech power cell</label>
+		<description>ph</description>
+		<descriptionHyperlinks>
+			<RecipeDef>SA_InstallVanometricPowerCell</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallVanometricPowerCell</defName>
+		<label>install archotech power cell</label>
+		<description>Install an archotech power cell.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_VanometricPowerCell</ThingDef>
+			<HediffDef>SA_VanometricPowerCell</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech power cell.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_VanometricPowerCell</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_VanometricPowerCell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_PowerCell</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_VanometricPowerCell</addsHediff>
+	</RecipeDef>
+
+	<!-- Archotech fluid processor -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SA_ArchotechFluidProcessor</defName>
+		<label>archotech fluid processor</label>
+		<labelNoun>an archotech fluid processor</labelNoun>
+		<description>An installed archotech fluid processor.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_ArchotechFluidProcessor</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SA_ArchotechFluidProcessor</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>false</solid>
+			<partEfficiency>1.5</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>SA_ArchotechFluidProcessor</defName>
+		<label>archotech fluid processor</label>
+		<description>ph</description>
+		<descriptionHyperlinks>
+			<RecipeDef>SA_InstallArchotechFluidProcessor</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallArchotechFluidProcessor</defName>
+		<label>install archotech power cell</label>
+		<description>Install an archotech power cell.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_ArchotechFluidProcessor</ThingDef>
+			<HediffDef>SA_ArchotechFluidProcessor</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech fluid processor.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_ArchotechFluidProcessor</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_ArchotechFluidProcessor</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_FluidProcessor</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_ArchotechFluidProcessor</addsHediff>
+	</RecipeDef>
+	
+	<!-- Archotech fluid pump -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SA_ArchotechFluidPump</defName>
+		<label>archotech fluid pump</label>
+		<labelNoun>an archotech fluid pump</labelNoun>
+		<description>An installed archotech fluid pump.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_ArchotechFluidPump</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SA_ArchotechFluidPump</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>false</solid>
+			<partEfficiency>1.5</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>SA_ArchotechFluidPump</defName>
+		<label>archotech fluid pump</label>
+		<description>ph</description>
+		<descriptionHyperlinks>
+			<RecipeDef>SA_InstallArchotechFluidPump</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallArchotechFluidPump</defName>
+		<label>install archotech fluid pump</label>
+		<description>Install an archotech fluid pump.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_ArchotechFluidPump</ThingDef>
+			<HediffDef>SA_ArchotechFluidPump</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech fluid pump.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_ArchotechFluidPump</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_ArchotechFluidPump</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_FluidPump</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_ArchotechFluidPump</addsHediff>
+	</RecipeDef>
+	
+	<!-- Archotech fluid heater -->
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>SA_ArchotechFluidHeater</defName>
+		<label>archotech fluid heater</label>
+		<labelNoun>an archotech fluid heater</labelNoun>
+		<description>An installed archotech fluid heater.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_ArchotechFluidHeater</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>SA_ArchotechFluidHeater</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>false</solid>
+			<partEfficiency>1.5</partEfficiency>
+		</addedPartProps>
+	</HediffDef>
+
+	<ThingDef ParentName="BodyPartArchotechBase">
+		<defName>SA_ArchotechFluidHeater</defName>
+		<label>archotech fluid heater</label>
+		<description>ph</description>
+		<descriptionHyperlinks>
+			<RecipeDef>SA_InstallArchotechFluidHeater</RecipeDef>
+		</descriptionHyperlinks>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Mass>0.3</Mass>
+		</statBases>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
+		<defName>SA_InstallArchotechFluidHeater</defName>
+		<label>install fluid heater</label>
+		<description>Install an fluid heater.</description>
+		<descriptionHyperlinks>
+			<ThingDef>SA_ArchotechFluidHeater</ThingDef>
+			<HediffDef>SA_ArchotechFluidHeater</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing archotech fluid heater.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SA_ArchotechFluidHeater</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SA_ArchotechFluidHeater</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>SA_FluidHeater</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SA_ArchotechFluidHeater</addsHediff>
+	</RecipeDef>
 
 </Defs>
