@@ -301,27 +301,27 @@ namespace SyntheticAndroids
 		}
 	}
 
-	//[HarmonyPatch(typeof(Pawn_HealthTracker), "AddHediff", new Type[]
-	//{
-	//	typeof(Hediff),
-	//	typeof(BodyPartRecord),
-	//	typeof(DamageInfo?),
-	//	typeof(DamageWorker.DamageResult),
-	//})]
-	//public class Patch_AddHediff
-	//{
-	//	private static bool Prefix(Pawn ___pawn, Hediff hediff, BodyPartRecord part = null, DamageInfo? dinfo = null, DamageWorker.DamageResult result = null)
-	//	{
-	//		if (___pawn != null && ___pawn.IsAndroid())
-	//		{
-	//			if (hediff is Hediff_Addiction)
-	//			{
-	//				return false;
-	//			}
-	//		}
-	//		return true;
-	//	}
-	//}
+	[HarmonyPatch(typeof(Pawn_HealthTracker), "AddHediff", new Type[]
+	{
+		typeof(Hediff),
+		typeof(BodyPartRecord),
+		typeof(DamageInfo?),
+		typeof(DamageWorker.DamageResult),
+	})]
+	public class Patch_AddHediff
+	{
+		private static bool Prefix(Pawn ___pawn, Hediff hediff, BodyPartRecord part = null, DamageInfo? dinfo = null, DamageWorker.DamageResult result = null)
+		{
+			if (___pawn != null && ___pawn.IsAndroid())
+			{
+				if (hediff is Hediff_Addiction)
+				{
+					return false;
+				}
+			}
+			return true;
+		}
+	}
 
 	[HarmonyPatch(typeof(PawnDownedWiggler), "WigglerTick")]
 	public static class WigglerTick_Patch
