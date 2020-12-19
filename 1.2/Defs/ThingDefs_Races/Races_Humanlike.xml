@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <ThingDef ParentName="BasePawn">
@@ -137,7 +137,7 @@
             <li>RemoveBodyPart</li>
         </recipes>
         <modExtensions>
-            <li Class="SyntheticAndroids.PawnSpawnOptions">
+            <li Class="SyntheticAndroids.AndroidOptions">
                 <disallowedTraits>
                     <li>DrugDesire</li>
                     <li>BodyPurist</li>
@@ -146,6 +146,9 @@
                     <li>Immunity</li>
 					<li>TorturedArtist</li>
                 </disallowedTraits>
+				<disallowedThoughts>
+					<li>DebugGood</li>
+				</disallowedThoughts>
             </li>
         </modExtensions>
     </ThingDef>

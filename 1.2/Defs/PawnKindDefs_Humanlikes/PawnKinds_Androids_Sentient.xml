@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<PawnKindDef ParentName="SA_AndroidBase" Name="SA_AndroidSentientBase" Abstract="True">
 		<modExtensions>
-			<li Class="SyntheticAndroids.PawnSpawnOptions">
+			<li Class="SyntheticAndroids.AndroidOptions">
 				<disallowedTraits>
 					<li>Abrasive</li>
 					<li>AnnoyingVoice</li>
@@ -20,7 +20,9 @@
 					<li>Undergrounder</li>
 					<li>Wimp</li>
 				</disallowedTraits>
-				
+				<disallowedThoughts>
+					<li>DebugBad</li>
+				</disallowedThoughts>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

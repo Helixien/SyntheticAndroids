@@ -8,8 +8,9 @@ using Verse;
 
 namespace SyntheticAndroids
 {
-    public class PawnSpawnOptions : DefModExtension
+    public class AndroidOptions : DefModExtension
     {
         public List<TraitDef> disallowedTraits;
+        public List<ThoughtDef> disallowedThoughts;
     }
 }
