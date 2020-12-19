@@ -53,6 +53,10 @@
     <Compile Include="HarmonyPatches\AI_Patches.cs" />
     <Compile Include="HarmonyPatches\Health_Patches.cs" />
     <Compile Include="HarmonyPatches\Events_Patches.cs" />
+    <Compile Include="HarmonyPatches\Royalty_Patches.cs" />
+    <Compile Include="HarmonyPatches\Skill_Patches.cs" />
+    <Compile Include="HarmonyPatches\Thought_Patches.cs" />
+    <Compile Include="HarmonyPatches\Trait_Patches.cs" />
     <Compile Include="HarmonyPatches\Relationship_Patches.cs" />
     <Compile Include="HarmonyPatches\PawnGenerator_Patches.cs" />
     <Compile Include="HarmonyPatches\Hediff_Patches.cs" />
@@ -68,7 +72,7 @@
     <Compile Include="Jobs\JobGiver_GetRestAndroid.cs" />
     <Compile Include="Jobs\JobGiver_GetEnergy.cs" />
     <Compile Include="MentalStates\MentalState_Wander_DazedAndroid.cs" />
-    <Compile Include="ModExtensions\PawnSpawnOptions.cs" />
+    <Compile Include="ModExtensions\AndroidOptions.cs" />
     <Compile Include="Needs\Need_Energy.cs" />
     <Compile Include="AssignAndroidCompToAndroids.cs" />
     <Compile Include="PawnCapacities\PawnCapacityWorker_Recharging.cs" />

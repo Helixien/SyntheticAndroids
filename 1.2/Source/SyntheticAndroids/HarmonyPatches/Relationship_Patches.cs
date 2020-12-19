@@ -21,4 +21,16 @@ namespace SyntheticAndroids
 			return true;
 		}
 	}
+
+	[HarmonyPatch(typeof(InteractionWorker_RomanceAttempt), "RandomSelectionWeight")]
+	public static class InteractionWorker_RomanceAttempt_RandomSelectionWeight_Patch
+	{
+		public static void Postfix(ref float __result, Pawn initiator, Pawn recipient)
+		{
+			if (initiator.IsAndroid() && !initiator.HasTrait(SADefOf.SA_Sentient))
+			{
+				__result = 0f;
+			}
+		}
+	}
 }
