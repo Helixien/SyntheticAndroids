@@ -507,7 +507,7 @@
 		<descriptionHyperlinks>
 			<ThingDef>AIPersonaCore</ThingDef>
 		</descriptionHyperlinks>
-		<spawnThingOnRemoved>SA_PersonaCore</spawnThingOnRemoved>
+		<spawnThingOnRemoved>AIPersonaCore</spawnThingOnRemoved>
 	</HediffDef>
 
 	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
