@@ -3,5 +3,7 @@
 
   <SA.ReportCharging>Charging</SA.ReportCharging>
   <SA.Destroyed>Destroyed</SA.Destroyed>
+  <SA.GainedSentience>Gained sentience: {PAWN_nameDef}</SA.GainedSentience>
+  <SA.GainedSentienceDesc>{PAWN_nameDef} gained sentience</SA.GainedSentienceDesc>
 
 </LanguageData>

@@ -49,6 +49,7 @@ namespace SyntheticAndroids
 			pawn.story.traits.GainTrait(new Trait(SADefOf.SA_Sentient));
 			GeneratePassions(pawn);
 			pawn.health.AddHediff(recipe.addsHediff, part);
+			Find.LetterStack.ReceiveLetter("SA.GainedSentience".Translate(pawn.Named("PAWN")), "SA.GainedSentienceDesc".Translate(pawn.Named("PAWN")), LetterDefOf.NeutralEvent, pawn);
 		}
 
 		private void GeneratePassions(Pawn pawn)

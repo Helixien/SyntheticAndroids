@@ -79,7 +79,7 @@
     <Compile Include="PawnCapacities\PawnCapacityWorker_Recharging.cs" />
     <Compile Include="PawnCapacities\PawnCapacityWorker_OrganicProcessing.cs" />
     <Compile Include="PawnCapacities\PawnCapacityWorker_Cooling.cs" />
-    <Compile Include="Recipes\AssignAndroidCompToAndroids.cs" />
+    <Compile Include="Recipes\Recipe_InstallPersonaCore.cs" />
     <Compile Include="SA_Utils.cs" />
     <Compile Include="SADefOf.cs" />
     <Compile Include="HarmonyPatches\HarmonyInit.cs" />

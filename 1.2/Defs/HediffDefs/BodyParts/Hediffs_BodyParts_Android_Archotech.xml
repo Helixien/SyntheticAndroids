@@ -508,6 +508,10 @@
 			<ThingDef>AIPersonaCore</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>AIPersonaCore</spawnThingOnRemoved>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+		</addedPartProps>
 	</HediffDef>
 
 	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
@@ -518,6 +522,7 @@
 			<ThingDef>AIPersonaCore</ThingDef>
 			<HediffDef>SA_PersonaCore</HediffDef>
 		</descriptionHyperlinks>
+		<workerClass>SyntheticAndroids.Recipe_InstallPersonaCore</workerClass>
 		<jobString>Installing persona core.</jobString>
 		<ingredients>
 			<li>

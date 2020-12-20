@@ -136,6 +136,9 @@
         <apparelMoney>0~350</apparelMoney>
         <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
         <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<weaponTags>
+            <li>Gun</li>
+        </weaponTags>
     </PawnKindDef>
 
     <PawnKindDef ParentName="SA_AndroidBase">
@@ -152,12 +155,18 @@
             <li>ImplantEmpireCommon</li>
         </techHediffsTags>
         <canBeSapper>true</canBeSapper>
+		<weaponTags>
+            <li>Gun</li>
+        </weaponTags>
     </PawnKindDef>
 	
     <PawnKindDef ParentName="SA_AndroidBase">
         <defName>SA_AndroidRefugee</defName>
         <label>android refugee</label>
         <apparelMoney>0~1000</apparelMoney>
+		<weaponTags>
+            <li>Gun</li>
+        </weaponTags>
     </PawnKindDef>
 
     <PawnKindDef ParentName="SA_AndroidBase">
@@ -168,6 +177,9 @@
         <disallowedTraits>
             <li>Nudist</li>
         </disallowedTraits>
+		<weaponTags>
+            <li>Gun</li>
+        </weaponTags>
     </PawnKindDef>
 
     <PawnKindDef ParentName="SA_AndroidBase">

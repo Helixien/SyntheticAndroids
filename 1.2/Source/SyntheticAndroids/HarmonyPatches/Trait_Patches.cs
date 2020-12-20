@@ -107,9 +107,13 @@ namespace SyntheticAndroids
     [HarmonyPatch(typeof(TraitSet), "GainTrait")]
     public static class GainTrait_Patch
     {
-        public static bool Prefix(Pawn ___pawn)
+        public static bool Prefix(Pawn ___pawn, Trait trait)
         {
-            return GenerateTraits_Patch.CanHaveTraits(___pawn);
+            if (trait.def != SADefOf.SA_Sentient)
+            {
+                return GenerateTraits_Patch.CanHaveTraits(___pawn);
+            }
+            return true;
         }
     }
 }
