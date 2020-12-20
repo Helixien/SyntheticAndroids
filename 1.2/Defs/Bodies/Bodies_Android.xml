@@ -46,7 +46,7 @@
                     </groups>
                 </li>
                 <li>
-                    <def>SA_OrganicMatterDecomposer</def>
+                    <def>SA_OrganicMatterProcessor</def>
                     <coverage>0.025</coverage>
                     <depth>Inside</depth>
                     <groups>
