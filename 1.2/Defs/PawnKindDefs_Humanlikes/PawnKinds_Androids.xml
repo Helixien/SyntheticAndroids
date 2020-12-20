@@ -164,7 +164,6 @@
             <li>ImplantEmpireCommon</li>
         </techHediffsTags>
         <canBeSapper>true</canBeSapper>
-		<permanentEnemy>true</permanentEnemy>
     </PawnKindDef>
 	
     <PawnKindDef ParentName="SA_AndroidBase">

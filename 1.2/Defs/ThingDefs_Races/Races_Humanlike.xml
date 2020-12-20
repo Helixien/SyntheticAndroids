@@ -12,6 +12,7 @@
             <ComfyTemperatureMax>22</ComfyTemperatureMax>
             <LeatherAmount>50</LeatherAmount>
             <RoyalFavorValue>5</RoyalFavorValue>
+			<PsychicSensitivity>0.75</PsychicSensitivity>
         </statBases>
         <tools>
             <li>
@@ -90,7 +91,6 @@
             <meatMarketValue>0.8</meatMarketValue>
             <manhunterOnDamageChance>0.20</manhunterOnDamageChance>
             <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
-			<PsychicSensitivity>0.75</PsychicSensitivity>
             <litterSizeCurve>
                 <points>
                     <li>(0.5, 0)</li>
