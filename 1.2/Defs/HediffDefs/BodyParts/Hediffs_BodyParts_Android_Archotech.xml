@@ -505,42 +505,25 @@
 		<labelNoun>a persona core</labelNoun>
 		<description>An installed persona core.</description>
 		<descriptionHyperlinks>
-			<ThingDef>SA_PersonaCore</ThingDef>
+			<ThingDef>AIPersonaCore</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SA_PersonaCore</spawnThingOnRemoved>
 	</HediffDef>
-
-	<ThingDef ParentName="BodyPartArchotechBase">
-		<defName>SA_PersonaCore</defName>
-		<label>persona core</label>
-		<description>ph</description>
-		<descriptionHyperlinks>
-			<RecipeDef>SA_InstallPersonaCore</RecipeDef>
-		</descriptionHyperlinks>
-		<statBases>
-			<MarketValue>1000</MarketValue>
-			<Mass>0.3</Mass>
-		</statBases>
-		<thingSetMakerTags>
-			<li>RewardStandardHighFreq</li>
-		</thingSetMakerTags>
-	</ThingDef>
 
 	<RecipeDef ParentName="SA_SurgeryInstallBodyPartArtificialBase">
 		<defName>SA_InstallPersonaCore</defName>
 		<label>install persona core</label>
 		<description>Install a persona core.</description>
 		<descriptionHyperlinks>
-			<ThingDef>SA_PersonaCore</ThingDef>
+			<ThingDef>AIPersonaCore</ThingDef>
 			<HediffDef>SA_PersonaCore</HediffDef>
 		</descriptionHyperlinks>
-        <workerClass>SyntheticAndroids.Recipe_InstallPersonaCore</workerClass>
 		<jobString>Installing persona core.</jobString>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>SA_PersonaCore</li>
+						<li>AIPersonaCore</li>
 					</thingDefs>
 				</filter>
 				<count>1</count>
@@ -548,7 +531,7 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>SA_PersonaCore</li>
+				<li>AIPersonaCore</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<appliedOnFixedBodyParts>
