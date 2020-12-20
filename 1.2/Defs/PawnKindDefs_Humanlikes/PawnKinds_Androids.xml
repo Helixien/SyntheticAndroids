@@ -9,7 +9,8 @@
 		<biocodeWeaponChance>0</biocodeWeaponChance>
 		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<defaultFactionType>OutlanderCivil</defaultFactionType>
-		<maxGenerationAge>250</maxGenerationAge>
+		<maxGenerationAge>350</maxGenerationAge>
+		<combatPower>35</combatPower>
 		<isFighter>false</isFighter>
 		<apparelTags>
 			<li>IndustrialBasic</li>
@@ -22,6 +23,8 @@
                 </categories>
             </li>
         </backstoryFiltersOverride>
+		<weaponMoney>150~450</weaponMoney>
+		<apparelMoney>200~400</apparelMoney>
         <disallowedTraits>
 			<li>Wimp</li>
 			<li>BodyPurist</li>
@@ -39,8 +42,6 @@
 			<li>Gun</li>
 			<li>MedievalMeleeBasic</li>
 		</weaponTags>
-		<weaponMoney>65~250</weaponMoney>
-		<apparelMoney>200~400</apparelMoney>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		<techHediffsChance>0</techHediffsChance>
 	</PawnKindDef>
@@ -54,8 +55,6 @@
 		<weaponTags>
 			<li>Gun</li>
 		</weaponTags>
-		<weaponMoney>65~250</weaponMoney>
-		<apparelMoney>200~400</apparelMoney>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		<techHediffsChance>0</techHediffsChance>
 	</PawnKindDef>
@@ -69,8 +68,6 @@
 		<weaponTags>
 			<li>Gun</li>
 		</weaponTags>
-		<weaponMoney>65~250</weaponMoney>
-		<apparelMoney>200~400</apparelMoney>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		<techHediffsChance>0</techHediffsChance>
 	</PawnKindDef>
@@ -84,8 +81,6 @@
 		<weaponTags>
 			<li>Gun</li>
 		</weaponTags>
-		<weaponMoney>65~250</weaponMoney>
-		<apparelMoney>200~400</apparelMoney>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		<techHediffsChance>0</techHediffsChance>
 	</PawnKindDef>
@@ -147,13 +142,6 @@
         <defName>SA_CorruptedAndroid</defName>
         <label>corrupted android</label>
         <combatPower>70</combatPower>
-        <backstoryFilters>
-            <li>
-                <categories>
-                    <li>SA_Adnroid</li>
-                </categories>
-            </li>
-        </backstoryFilters>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <biocodeWeaponChance>0</biocodeWeaponChance>
         <chemicalAddictionChance>0</chemicalAddictionChance>
