@@ -54,7 +54,7 @@
     <Compile Include="HarmonyPatches\Health_Patches.cs" />
     <Compile Include="HarmonyPatches\Events_Patches.cs" />
     <Compile Include="HarmonyPatches\Royalty_Patches.cs" />
-    <Compile Include="HarmonyPatches\Skill_Patches.cs" />
+    <Compile Include="HarmonyPatches\Pawn_Patches.cs" />
     <Compile Include="HarmonyPatches\Thought_Patches.cs" />
     <Compile Include="HarmonyPatches\Trait_Patches.cs" />
     <Compile Include="HarmonyPatches\Relationship_Patches.cs" />
@@ -75,7 +75,8 @@
     <Compile Include="MentalStates\MentalState_Wander_DazedAndroid.cs" />
     <Compile Include="ModExtensions\AndroidOptions.cs" />
     <Compile Include="Needs\Need_Energy.cs" />
-    <Compile Include="AssignAndroidCompToAndroids.cs" />
+    <Compile Include="Utils\AndroidFoodUtility.cs" />
+    <Compile Include="Utils\AssignAndroidCompToAndroids.cs" />
     <Compile Include="PawnCapacities\PawnCapacityWorker_Recharging.cs" />
     <Compile Include="PawnCapacities\PawnCapacityWorker_OrganicProcessing.cs" />
     <Compile Include="PawnCapacities\PawnCapacityWorker_Cooling.cs" />
@@ -84,6 +85,8 @@
     <Compile Include="SADefOf.cs" />
     <Compile Include="HarmonyPatches\HarmonyInit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SyntheticAndroidsMod.cs" />
+    <Compile Include="SyntheticAndroidsSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Krafs.Rimworld.Ref">

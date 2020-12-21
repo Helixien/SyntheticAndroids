@@ -59,7 +59,7 @@ namespace SyntheticAndroids
                 return null;
             }
             bool desperate = false;
-            if (!SA_Utils.TryFindBestFoodSourceFor(pawn, pawn, desperate, out Thing foodSource, out ThingDef foodDef, canRefillDispenser: true,
+            if (!AndroidFoodUtility.TryFindBestFoodSourceFor(pawn, pawn, desperate, out Thing foodSource, out ThingDef foodDef, canRefillDispenser: true,
                     canUseInventory: true, allowForbidden: false, false, allowSociallyImproper: false, pawn.IsWildMan(), forceScanWholeMap))
             {
                 return null;
@@ -88,7 +88,7 @@ namespace SyntheticAndroids
                         return job2;
                     }
                 }
-                foodSource = SA_Utils.BestFoodSourceOnMap(pawn, pawn, desperate, out foodDef, FoodPreferability.MealLavish, allowPlant: false, !pawn.IsTeetotaler(), allowCorpse: false,
+                foodSource = AndroidFoodUtility.BestFoodSourceOnMap(pawn, pawn, desperate, out foodDef, FoodPreferability.MealLavish, allowPlant: false, !pawn.IsTeetotaler(), allowCorpse: false,
                     allowDispenserFull: false, allowDispenserEmpty: false, allowForbidden: false, allowSociallyImproper: false,
                     allowHarvest: false, forceScanWholeMap);
                 if (foodSource == null)
@@ -98,7 +98,7 @@ namespace SyntheticAndroids
             }
             float nutrition = FoodUtility.GetNutrition(foodSource, foodDef);
             Job job3 = JobMaker.MakeJob(SADefOf.SA_AndroidIngest, foodSource);
-            job3.count = SA_Utils.WillIngestStackCountOf(pawn, foodDef, nutrition);
+            job3.count = AndroidFoodUtility.WillIngestStackCountOf(pawn, foodDef, nutrition);
             return job3;
         }
 

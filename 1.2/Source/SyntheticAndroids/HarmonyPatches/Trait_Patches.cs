@@ -76,13 +76,13 @@ namespace SyntheticAndroids
             if (options != null)
             {
                 traitDefs = traitDefs.Where(x => !options.disallowedTraits.Contains(x)).ToList();
-                var options2 = p.kindDef.GetModExtension<AndroidOptions>();
-                if (options2 != null)
-                {
-                    traitDefs = traitDefs.Where(x => !options.disallowedTraits.Contains(x)).ToList();
-                }
-                traitDefs.RemoveAll(x => x is AndroidTraitDef androidTraitDef && androidTraitDef.allowedPawnKindDefs?.Count > 0 && !androidTraitDef.allowedPawnKindDefs.Contains(p.kindDef));
             }
+            var options2 = p.kindDef.GetModExtension<AndroidOptions>();
+            if (options2 != null)
+            {
+                traitDefs = traitDefs.Where(x => !options.disallowedTraits.Contains(x)).ToList();
+            }
+            traitDefs.RemoveAll(x => x is AndroidTraitDef androidTraitDef && androidTraitDef.allowedPawnKindDefs?.Count > 0 && !androidTraitDef.allowedPawnKindDefs.Contains(p.kindDef));
             return traitDefs;
         }
     }
@@ -100,6 +100,7 @@ namespace SyntheticAndroids
         }
         public static void GenerateTraitsValidator(ref IEnumerable<TraitDef> __result, Pawn p)
         {
+            Log.Message("TEST");
             __result = GenerateTraits_Patch.GenerateTraits(p, __result.ToList());
         }
     }

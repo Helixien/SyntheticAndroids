@@ -62,6 +62,10 @@ namespace SyntheticAndroids
                     foreach (var skill in __result.skills.skills)
                     {
                         skill.passion = Passion.None;
+                        if (skill.Level > SyntheticAndroidsMod.settings.skillCapStates[skill.def.defName])
+                        {
+                            skill.Level = SyntheticAndroidsMod.settings.skillCapStates[skill.def.defName];
+                        }
                     }
                 }
             }

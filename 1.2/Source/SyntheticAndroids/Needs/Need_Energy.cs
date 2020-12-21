@@ -86,7 +86,12 @@ namespace SyntheticAndroids
 				}
 				else
 				{
-					CurLevel -= EnergyNeedFallPerTick * 150f;
+					var fallRate = EnergyNeedFallPerTick * 150f;
+					if (this.pawn.Drafted && !this.pawn.pather.MovingNow)
+                    {
+						fallRate /= 3f;
+                    }
+					CurLevel -= fallRate;
 				}
 			}
 			if (!EmptyEnergy)

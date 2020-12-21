@@ -265,7 +265,6 @@ namespace SyntheticAndroids
 								tmpHediffsToTend[i].Tended_NewTemp(1f, 1f, i);
 							}
 						}
-
 					}
 				}
 			}
